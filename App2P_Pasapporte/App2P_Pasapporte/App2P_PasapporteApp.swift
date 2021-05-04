@@ -22,7 +22,7 @@ import SwiftUI
 struct App2P_PasapporteApp: App {
     var body: some Scene {
         WindowGroup {
-            HomeView()
+            PlaceHolderHomeView()
         }
     }
 }

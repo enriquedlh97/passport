@@ -28,6 +28,7 @@
 		24BC6084263F94C9003D9CCF /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BC6083263F94C9003D9CCF /* Extensions.swift */; };
 		24BC6087263F9668003D9CCF /* NavigationBarModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BC6086263F9668003D9CCF /* NavigationBarModifier.swift */; };
 		24BC608B263F978B003D9CCF /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24BC608A263F978B003D9CCF /* Colors.xcassets */; };
+		53DCC0142641A0C800699C0B /* PlaceHolderHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DCC0132641A0C800699C0B /* PlaceHolderHomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,7 @@
 		24BC6083263F94C9003D9CCF /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		24BC6086263F9668003D9CCF /* NavigationBarModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarModifier.swift; sourceTree = "<group>"; };
 		24BC608A263F978B003D9CCF /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		53DCC0132641A0C800699C0B /* PlaceHolderHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceHolderHomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 				24BC6071263F8B8B003D9CCF /* Fonts */,
 				24BC6040263F793C003D9CCF /* App2P_PasapporteApp.swift */,
 				24BC6051263F7F4F003D9CCF /* HomeView.swift */,
+				53DCC0132641A0C800699C0B /* PlaceHolderHomeView.swift */,
 				24BC6042263F793C003D9CCF /* ContentView.swift */,
 				24BC606A263F8A3A003D9CCF /* MediaDetailView.swift */,
 				24BC6086263F9668003D9CCF /* NavigationBarModifier.swift */,
@@ -203,6 +206,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				24BC605B263F8136003D9CCF /* VisitView.swift in Sources */,
+				53DCC0142641A0C800699C0B /* PlaceHolderHomeView.swift in Sources */,
 				24BC6058263F811B003D9CCF /* WeatherView.swift in Sources */,
 				24BC605E263F855F003D9CCF /* MediaModel.swift in Sources */,
 				24BC6055263F80D9003D9CCF /* ListView.swift in Sources */,

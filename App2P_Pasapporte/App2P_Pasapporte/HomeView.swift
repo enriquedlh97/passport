@@ -14,7 +14,7 @@ struct HomeView: View {
     @StateObject var media = MediaModel()
     
     var body: some View {
-        
+            
             NavigationView {
                 TabView {
                         
