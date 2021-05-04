@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		24BC6041263F793C003D9CCF /* App2P_PasapporteApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BC6040263F793C003D9CCF /* App2P_PasapporteApp.swift */; };
-		24BC6043263F793C003D9CCF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BC6042263F793C003D9CCF /* ContentView.swift */; };
 		24BC6045263F793D003D9CCF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24BC6044263F793D003D9CCF /* Assets.xcassets */; };
 		24BC6048263F793D003D9CCF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24BC6047263F793D003D9CCF /* Preview Assets.xcassets */; };
 		24BC6052263F7F4F003D9CCF /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BC6051263F7F4F003D9CCF /* HomeView.swift */; };
@@ -34,7 +33,6 @@
 /* Begin PBXFileReference section */
 		24BC603D263F793C003D9CCF /* App2P_Pasapporte.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = App2P_Pasapporte.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24BC6040263F793C003D9CCF /* App2P_PasapporteApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App2P_PasapporteApp.swift; sourceTree = "<group>"; };
-		24BC6042263F793C003D9CCF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		24BC6044263F793D003D9CCF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		24BC6047263F793D003D9CCF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		24BC6049263F793D003D9CCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -92,7 +90,6 @@
 				24BC6040263F793C003D9CCF /* App2P_PasapporteApp.swift */,
 				24BC6051263F7F4F003D9CCF /* HomeView.swift */,
 				53DCC0132641A0C800699C0B /* PlaceHolderHomeView.swift */,
-				24BC6042263F793C003D9CCF /* ContentView.swift */,
 				24BC606A263F8A3A003D9CCF /* MediaDetailView.swift */,
 				24BC6086263F9668003D9CCF /* NavigationBarModifier.swift */,
 				24BC6083263F94C9003D9CCF /* Extensions.swift */,
@@ -212,7 +209,6 @@
 				24BC6055263F80D9003D9CCF /* ListView.swift in Sources */,
 				24BC6052263F7F4F003D9CCF /* HomeView.swift in Sources */,
 				24BC606E263F8AFC003D9CCF /* WebView.swift in Sources */,
-				24BC6043263F793C003D9CCF /* ContentView.swift in Sources */,
 				24BC606B263F8A3A003D9CCF /* MediaDetailView.swift in Sources */,
 				24BC6084263F94C9003D9CCF /* Extensions.swift in Sources */,
 				24BC6087263F9668003D9CCF /* NavigationBarModifier.swift in Sources */,
