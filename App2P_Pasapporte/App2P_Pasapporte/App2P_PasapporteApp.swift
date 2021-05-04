@@ -3,6 +3,7 @@
 //  App2P_Pasapporte
 //
 //  Created by Karla Perales Lopez on 02/05/21.
+//  Updated by Enrique Diaz de Leon Hicks on 04/05/2021
 //
 //
 // RGB COLORES = PARA USAR EN COLOR LITERAL
@@ -21,7 +22,7 @@ import SwiftUI
 struct App2P_PasapporteApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            HomeView()
         }
     }
 }

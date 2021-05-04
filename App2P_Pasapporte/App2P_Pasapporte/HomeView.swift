@@ -17,25 +17,27 @@ struct HomeView: View {
         
             NavigationView {
                 TabView {
-                    Text(" ")
-                    .padding()
-                    .background(
-                    Image("H_BG-5")
-                        .scaleEffect(x: 0.55, y: 0.55, anchor: .center)
-                    )
+                        
+//                    Text("")
+//                    .padding()
+//                    .background(
+//                    Image("H_BG-5")
+//                        .scaleEffect(x: 0.55, y: 0.55, anchor: .center)
+//                    )
                     ListView(media: media)
                         .tabItem {
-                            Label("Países", systemImage: "pin.circle.fill")
-                        }
-                    WeatherView(media: media)
-                        .tabItem {
-                            Label("Clima", systemImage: "sun.max.fill")
+                            Label("Countries", systemImage: "pin.circle.fill")
                         }
                     VisitView(media: media)
+                                            .tabItem {
+                                                Label("Visited", systemImage: "checkmark.circle.fill")
+                                                    
+                                            }
+                    WeatherView(media: media)
                         .tabItem {
-                            Label("Visitados", systemImage: "checkmark.circle.fill")
-                                
+                            Label("Weather", systemImage: "sun.max.fill")
                         }
+                    
                 }
                 
             }
