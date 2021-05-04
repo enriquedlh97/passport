@@ -45,10 +45,10 @@
 		24BC6060263F85CB003D9CCF /* Media.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Media.swift; sourceTree = "<group>"; };
 		24BC606A263F8A3A003D9CCF /* MediaDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaDetailView.swift; sourceTree = "<group>"; };
 		24BC606D263F8AFC003D9CCF /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
-		24BC6072263F8B9D003D9CCF /* LondonTube-MABx.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "LondonTube-MABx.ttf"; path = "../../../../../../../../LondonTube-MABx.ttf"; sourceTree = "<group>"; };
-		24BC6075263F8BA8003D9CCF /* LemonMilk.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = LemonMilk.otf; path = "../../../../../../../../lemon-milk/LemonMilk.otf"; sourceTree = "<group>"; };
-		24BC6078263F8BE0003D9CCF /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-Regular.ttf"; path = "../../../../../../../../Montserrat/Montserrat-Regular.ttf"; sourceTree = "<group>"; };
-		24BC6079263F8BE0003D9CCF /* Montserrat-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-SemiBold.ttf"; path = "../../../../../../../../Montserrat/Montserrat-SemiBold.ttf"; sourceTree = "<group>"; };
+		24BC6072263F8B9D003D9CCF /* LondonTube-MABx.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LondonTube-MABx.ttf"; sourceTree = "<group>"; };
+		24BC6075263F8BA8003D9CCF /* LemonMilk.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = LemonMilk.otf; sourceTree = "<group>"; };
+		24BC6078263F8BE0003D9CCF /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
+		24BC6079263F8BE0003D9CCF /* Montserrat-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBold.ttf"; sourceTree = "<group>"; };
 		24BC607D263F8C9C003D9CCF /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		24BC6080263F9068003D9CCF /* MediaCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaCellView.swift; sourceTree = "<group>"; };
 		24BC6083263F94C9003D9CCF /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
