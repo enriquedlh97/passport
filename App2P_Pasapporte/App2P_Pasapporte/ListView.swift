@@ -3,6 +3,7 @@
 //  App2P_Pasapporte
 //
 //  Created by Karla Perales Lopez on 02/05/21.
+//  Updated by Enrique Diaz de Leon Hicks 05/05/2021
 //
 
 // LISTA DE PAÍSES/CIUDADES (DEPENDE LA API QUE ENCUENTREN)
@@ -15,65 +16,47 @@ struct ListView: View {
     @State var indexSelected: Int = 0
     
     var body: some View {
-        GeometryReader { geo in
+        
+        NavigationView {
             ZStack {
-                Color(#colorLiteral(red: 0.4509803922, green: 0.7607843137, blue: 0.831372549, alpha: 1))
+                Color(#colorLiteral(red: 0.4509803922, green: 0.7607843137, blue: 0.831372549, alpha: 1)).ignoresSafeArea()
                 VStack {
                     VStack {
                         Text("Countries")
                             .font(.Lemon(size: 35))
                             .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                            .padding(.top,50)
                     }
-                    List {
-                        Section(
-                            header: Text("Africa"),
-                            content: {
-                                
-                            })
-                        Section(
-                            header: Text("Americas"),
-                            content: {
-                                
-                            })
-                        Section(
-                            header: Text("Asia"),
-                            content: {
-                                
-                            })
-                        Section(
-                            header: Text("Europe"),
-                            content: {
-                                
-                            })
-                        Section(
-                            header: Text("Oceania"),
-                            content: {
-                                
-                            })
+                    VStack {
+                        List {
+                            Section(
+                                header: Text("Africa"),
+                                content: {
+                                    
+                                })
+                            Section(
+                                header: Text("Americas"),
+                                content: {
+                                    
+                                })
+                            Section(
+                                header: Text("Asia"),
+                                content: {
+                                    
+                                })
+                            Section(
+                                header: Text("Europe"),
+                                content: {
+                                    
+                                })
+                            Section(
+                                header: Text("Oceania"),
+                                content: {
+                                    
+                                })
+                        }
                     }
-                    //.listStyle(PlainListStyle())
-//                    VStack {
-//                        ScrollView(.horizontal, showsIndicators: false) {
-//                            HStack {
-//                                ForEach(media.list) { country in
-//                                    NavigationLink(
-//                                        destination: MediaDetailView(media: country),
-//                                        label: {
-//                                            MediaCellView(media: country)
-//                                      //  .frame(width: geo.size.width)
-//                                        })
-//                                }
-//                            }
-//
-//                        }
-//                    }
-//                    .padding(.top,-6)
                 }
-                .padding(.bottom,80)
             }
-            .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
-            
         }
     }
 }
