@@ -18,7 +18,6 @@ struct HomeView: View {
         
         NavigationView {
             TabView {
-                
                 ListView(media: media)
                     .tabItem {
                         Label("Countries", systemImage: "pin.circle.fill")

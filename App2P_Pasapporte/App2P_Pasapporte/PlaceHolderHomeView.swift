@@ -24,7 +24,7 @@ struct PlaceHolderHomeView: View {
                     )
                 
             } else {
-                HomeView()
+                    HomeView()
             }
         }
         .onAppear {

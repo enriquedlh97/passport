@@ -18,45 +18,39 @@ struct ListView: View {
     var body: some View {
         
         NavigationView {
-            ZStack {
-                Color(#colorLiteral(red: 0.4509803922, green: 0.7607843137, blue: 0.831372549, alpha: 1)).ignoresSafeArea()
-                VStack {
-                    VStack {
-                        Text("Countries")
-                            .font(.Lemon(size: 35))
-                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                    }
-                    VStack {
-                        List {
-                            Section(
-                                header: Text("Africa"),
-                                content: {
-                                    
-                                })
-                            Section(
-                                header: Text("Americas"),
-                                content: {
-                                    
-                                })
-                            Section(
-                                header: Text("Asia"),
-                                content: {
-                                    
-                                })
-                            Section(
-                                header: Text("Europe"),
-                                content: {
-                                    
-                                })
-                            Section(
-                                header: Text("Oceania"),
-                                content: {
-                                    
-                                })
-                        }
-                    }
+            VStack {
+                List {
+                    Section(
+                        header: Text("Africa"),
+                        content: {
+                            
+                        })
+                    Section(
+                        header: Text("Americas"),
+                        content: {
+                            
+                        })
+                    Section(
+                        header: Text("Asia"),
+                        content: {
+                            
+                        })
+                    Section(
+                        header: Text("Europe"),
+                        content: {
+                            
+                        })
+                    Section(
+                        header: Text("Oceania"),
+                        content: {
+                            
+                        })
                 }
+                
+                .listStyle(PlainListStyle())
             }
+            .navigationBarTitle("Countries")
+            .navigationBarTitleDisplayMode(.inline)
         }
     }
 }
