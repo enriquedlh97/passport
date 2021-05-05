@@ -8,7 +8,10 @@
 
 import Foundation
 
-let apikey = "f8ebd067cdmsh4cd4c53f3ae1900p16eb67jsn87aeea2d0e14"
+let headers = [
+    "x-rapidapi-key": "f8ebd067cdmsh4cd4c53f3ae1900p16eb67jsn87aeea2d0e14",
+    "x-rapidapi-host": "restcountries-v1.p.rapidapi.com"
+]
 
 extension Region {
     

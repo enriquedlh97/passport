@@ -36,7 +36,7 @@ class DataModel: ObservableObject {
         
         let URL = "https://restcountries-v1.p.rapidapi.com/region/\(regionName)"
         
-        
+        AF.request(URL, parameters: headers)
     }
     
     func loadFlag(iso2: String) {
