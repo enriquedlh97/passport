@@ -28,6 +28,7 @@
 		24BC6087263F9668003D9CCF /* NavigationBarModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BC6086263F9668003D9CCF /* NavigationBarModifier.swift */; };
 		24BC608B263F978B003D9CCF /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24BC608A263F978B003D9CCF /* Colors.xcassets */; };
 		53BED5D526434922007BA8A4 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BED5D426434922007BA8A4 /* Country.swift */; };
+		53BED5D826434CBE007BA8A4 /* Region.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BED5D726434CBE007BA8A4 /* Region.swift */; };
 		53DCC0142641A0C800699C0B /* PlaceHolderHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DCC0132641A0C800699C0B /* PlaceHolderHomeView.swift */; };
 /* End PBXBuildFile section */
 
@@ -55,6 +56,7 @@
 		24BC6086263F9668003D9CCF /* NavigationBarModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarModifier.swift; sourceTree = "<group>"; };
 		24BC608A263F978B003D9CCF /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		53BED5D426434922007BA8A4 /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
+		53BED5D726434CBE007BA8A4 /* Region.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Region.swift; sourceTree = "<group>"; };
 		53DCC0132641A0C800699C0B /* PlaceHolderHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceHolderHomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -95,6 +97,7 @@
 				24BC606A263F8A3A003D9CCF /* MediaDetailView.swift */,
 				24BC6086263F9668003D9CCF /* NavigationBarModifier.swift */,
 				24BC6083263F94C9003D9CCF /* Extensions.swift */,
+				53BED5D726434CBE007BA8A4 /* Region.swift */,
 				24BC606D263F8AFC003D9CCF /* WebView.swift */,
 				24BC6080263F9068003D9CCF /* MediaCellView.swift */,
 				24BC6054263F80D9003D9CCF /* ListView.swift */,
@@ -216,6 +219,7 @@
 				24BC6084263F94C9003D9CCF /* Extensions.swift in Sources */,
 				24BC6087263F9668003D9CCF /* NavigationBarModifier.swift in Sources */,
 				24BC6061263F85CB003D9CCF /* Media.swift in Sources */,
+				53BED5D826434CBE007BA8A4 /* Region.swift in Sources */,
 				24BC6081263F9068003D9CCF /* MediaCellView.swift in Sources */,
 				24BC607E263F8C9C003D9CCF /* File.swift in Sources */,
 				53BED5D526434922007BA8A4 /* Country.swift in Sources */,
