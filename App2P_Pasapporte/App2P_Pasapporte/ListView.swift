@@ -25,22 +25,50 @@ struct ListView: View {
                             .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                             .padding(.top,50)
                     }
-                    VStack {
-                        ScrollView(.horizontal, showsIndicators: false) {
-                            HStack {
-                                ForEach(media.list) { country in
-                                    NavigationLink(
-                                        destination: MediaDetailView(media: country),
-                                        label: {
-                                            MediaCellView(media: country)
-                                      //  .frame(width: geo.size.width)
-                                        })
-                                }
-                            }
-                            
-                        }
+                    List {
+                        Section(
+                            header: Text("Africa"),
+                            content: {
+                                
+                            })
+                        Section(
+                            header: Text("Americas"),
+                            content: {
+                                
+                            })
+                        Section(
+                            header: Text("Asia"),
+                            content: {
+                                
+                            })
+                        Section(
+                            header: Text("Europe"),
+                            content: {
+                                
+                            })
+                        Section(
+                            header: Text("Oceania"),
+                            content: {
+                                
+                            })
                     }
-                    .padding(.top,-6)
+                    //.listStyle(PlainListStyle())
+//                    VStack {
+//                        ScrollView(.horizontal, showsIndicators: false) {
+//                            HStack {
+//                                ForEach(media.list) { country in
+//                                    NavigationLink(
+//                                        destination: MediaDetailView(media: country),
+//                                        label: {
+//                                            MediaCellView(media: country)
+//                                      //  .frame(width: geo.size.width)
+//                                        })
+//                                }
+//                            }
+//
+//                        }
+//                    }
+//                    .padding(.top,-6)
                 }
                 .padding(.bottom,80)
             }
