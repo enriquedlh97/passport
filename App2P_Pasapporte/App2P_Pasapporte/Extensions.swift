@@ -8,6 +8,12 @@
 
 import Foundation
 
+extension Data {
+    
+    public static var defaultData = Data(africa: Region.defaultRegion, americas: Region.defaultRegion, asia: Region.defaultRegion, europe: Region.defaultRegion, oceania: Region.defaultRegion)
+    
+}
+
 extension Region {
     
     public static var defaultRegion = Region(regionName: "Africa", countriesList: [Country.defaultCountry])
