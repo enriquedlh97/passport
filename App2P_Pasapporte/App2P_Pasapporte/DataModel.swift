@@ -35,8 +35,24 @@ class DataModel: ObservableObject {
     func loadRegionData(regionName: String) {
         
         let URL = "https://restcountries-v1.p.rapidapi.com/region/\(regionName)"
+
+        // Makes request with specified parameters to get genres data
+        AF.request(URL, method: .get, encoding: URLEncoding.default, headers: HTTPHeaders(headers)).responseData { data in
+            // Decodes the data saved in the data variable gotten by the .responseData
+            let json = try! JSON(data: data.data!)
+            
+            print(json)
+//            // Loops over array to get and save the data
+//            for g in json["genres"] {
+//                // For each item a Genre object is created and the values given in the item are saved as object properties
+//                genre = Genre(
+//                    id: g.1["id"].intValue,
+//                    name: g.1["name"].stringValue)
+//                // One this is done, the objetc is appended to the genre array
+//                self.genres.append(genre)
+//            }
+        }
         
-        AF.request(URL, parameters: headers)
     }
     
     func loadFlag(iso2: String) {
