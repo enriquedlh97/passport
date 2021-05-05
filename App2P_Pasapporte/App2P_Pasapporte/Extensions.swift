@@ -8,6 +8,8 @@
 
 import Foundation
 
+let apikey = "f8ebd067cdmsh4cd4c53f3ae1900p16eb67jsn87aeea2d0e14"
+
 extension Region {
     
     public static var defaultRegion = Region(regionName: "Africa", countriesList: [Country.defaultCountry])
