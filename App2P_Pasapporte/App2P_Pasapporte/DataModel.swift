@@ -40,17 +40,24 @@ class DataModel: ObservableObject {
         AF.request(URL, method: .get, encoding: URLEncoding.default, headers: HTTPHeaders(headers)).responseData { data in
             // Decodes the data saved in the data variable gotten by the .responseData
             let json = try! JSON(data: data.data!)
+
+            // Creates temporary Region object to hold data
+            var region: Region
+            // Creates country variable to hold country-sepecific data
+            var country: Country
             
-            print(json)
-//            // Loops over array to get and save the data
-//            for g in json["genres"] {
-//                // For each item a Genre object is created and the values given in the item are saved as object properties
-//                genre = Genre(
-//                    id: g.1["id"].intValue,
-//                    name: g.1["name"].stringValue)
-//                // One this is done, the objetc is appended to the genre array
-//                self.genres.append(genre)
-//            }
+            //print(json[0]["name"])
+            // Loops over array to get and save the data
+            for item in json {
+                print(item.1["region"])
+                
+                // Each item corresponds to a country. So, for each item, a COuntry object is created and the item's data is saved as the object's attributes. All items/countries of the same region are appended to the corresponding region property of the DataModel
+                genre = Genre(
+                    id: g.1["id"].intValue,
+                    name: g.1["name"].stringValue)
+                // One this is done, the objetc is appended to the genre array
+                self.genres.append(genre)
+            }
         }
         
     }
