@@ -15,12 +15,13 @@ struct Country: Identifiable {
     
     var id = UUID() // Lets swift assign and id automatically
     var name: String // Holds the name of a country
-    var alpha2Code: String // 2 character country code (id)
-    var alpha3Code: String // 3 character country code (id)
+    var alpha2Code: String // 2 character country code (id) corresponds to iso2
+    var alpha3Code: String // 3 character country code (id) corresponds to iso3
     var subregion: String // String corresponding to the subregieon, eg Northern Africa
     var population: Double
     var lat: Float  // latitude
     var long: Float // longitude
+    var flag: String //url with flag of country
 }
 
 
