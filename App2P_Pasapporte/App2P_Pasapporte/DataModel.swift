@@ -27,12 +27,17 @@ class DataModel: ObservableObject {
         let regions = ["africa", "americas", "asia", "europe", "oceania"]
         
         for region in regions {
-            loadRegionData(regionName: region)
+            
+            var regionProperty: Region
+            
+            regionProperty.regionName = region
+            
+            loadRegionData(regionName: region, regionProperty: regionProperty)
         }
         
     }
     
-    func loadRegionData(regionName: String) {
+    func loadRegionData(regionName: String, regionProperty: Region) {
         
         let URL = "https://restcountries-v1.p.rapidapi.com/region/\(regionName)"
 
@@ -41,8 +46,6 @@ class DataModel: ObservableObject {
             // Decodes the data saved in the data variable gotten by the .responseData
             let json = try! JSON(data: data.data!)
 
-            // Creates temporary Region object to hold data
-            var region: Region
             // Creates country variable to hold country-sepecific data
             var country: Country
             
