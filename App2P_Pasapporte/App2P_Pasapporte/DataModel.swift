@@ -26,11 +26,16 @@ class DataModel: ObservableObject {
         
         let regions = ["africa", "americas", "asia", "europe", "oceania"]
         
+        for region in regions {
+            loadRegionData(regionName: region)
+        }
+        
     }
     
-    func loadRegionData(region: String) {
+    func loadRegionData(regionName: String) {
         
-        let URL = "https://restcountries-v1.p.rapidapi.com/"
+        let URL = "https://restcountries-v1.p.rapidapi.com/region/\(regionName)"
+        
         
     }
     
