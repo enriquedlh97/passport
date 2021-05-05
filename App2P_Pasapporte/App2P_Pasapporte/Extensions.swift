@@ -8,7 +8,11 @@
 
 import Foundation
 
-
+extension Region {
+    
+    public static var defaultRegion = Region(regionName: "Africa", countriesList: [Country.defaultCountry])
+    
+}
 
 extension Country {
     
