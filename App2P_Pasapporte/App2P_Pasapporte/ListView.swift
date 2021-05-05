@@ -12,7 +12,7 @@
 import SwiftUI
 
 struct ListView: View {
-    @StateObject var media: MediaModel
+    @StateObject var data = DataModel()
     @State var indexSelected: Int = 0
     
     var body: some View {
@@ -57,6 +57,6 @@ struct ListView: View {
 
 struct ListView_Previews: PreviewProvider {
     static var previews: some View {
-        ListView(media: MediaModel())
+        ListView()
     }
 }
