@@ -26,7 +26,7 @@ struct ListView: View {
                             ForEach(data.americas?.countriesList ?? [Country.defaultCountry]) { item in
                                 
                                     NavigationLink(
-                                        destination: CountryView(),
+                                        destination: CountryView(country: item),
                                         label: {CountryCellView(country: item)}
                                     )
                                         
