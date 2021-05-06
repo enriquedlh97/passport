@@ -37,6 +37,9 @@
 		53BED5E32643550A007BA8A4 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 53BED5E22643550A007BA8A4 /* Alamofire */; };
 		53BED5E726435525007BA8A4 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 53BED5E626435525007BA8A4 /* SwiftyJSON */; };
 		53BED5EB2643554F007BA8A4 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 53BED5EA2643554F007BA8A4 /* Kingfisher */; };
+		53C536FD26448F1000A7D58A /* VisitedModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 53C536FB26448F1000A7D58A /* VisitedModel.xcdatamodeld */; };
+		53C53701264490AE00A7D58A /* Visited+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C536FF264490AE00A7D58A /* Visited+CoreDataClass.swift */; };
+		53C53702264490AE00A7D58A /* Visited+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C53700264490AE00A7D58A /* Visited+CoreDataProperties.swift */; };
 		53DCC0142641A0C800699C0B /* PlaceHolderHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DCC0132641A0C800699C0B /* PlaceHolderHomeView.swift */; };
 /* End PBXBuildFile section */
 
@@ -70,6 +73,9 @@
 		53BED5D426434922007BA8A4 /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
 		53BED5D726434CBE007BA8A4 /* Region.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Region.swift; sourceTree = "<group>"; };
 		53BED5DE26435210007BA8A4 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		53C536FC26448F1000A7D58A /* VisitedModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = VisitedModel.xcdatamodel; sourceTree = "<group>"; };
+		53C536FF264490AE00A7D58A /* Visited+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Visited+CoreDataClass.swift"; path = "App2P_Pasapporte/CoreData/Visited+CoreDataClass.swift"; sourceTree = "<group>"; };
+		53C53700264490AE00A7D58A /* Visited+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Visited+CoreDataProperties.swift"; path = "App2P_Pasapporte/CoreData/Visited+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		53DCC0132641A0C800699C0B /* PlaceHolderHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceHolderHomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -90,6 +96,8 @@
 		24BC6034263F793C003D9CCF = {
 			isa = PBXGroup;
 			children = (
+				53C536FF264490AE00A7D58A /* Visited+CoreDataClass.swift */,
+				53C53700264490AE00A7D58A /* Visited+CoreDataProperties.swift */,
 				24BC603F263F793C003D9CCF /* App2P_Pasapporte */,
 				24BC603E263F793C003D9CCF /* Products */,
 			);
@@ -106,6 +114,7 @@
 		24BC603F263F793C003D9CCF /* App2P_Pasapporte */ = {
 			isa = PBXGroup;
 			children = (
+				53C536FA26448ED800A7D58A /* CoreData */,
 				24BC6071263F8B8B003D9CCF /* Fonts */,
 				24BC6040263F793C003D9CCF /* App2P_PasapporteApp.swift */,
 				24BC6051263F7F4F003D9CCF /* HomeView.swift */,
@@ -153,6 +162,14 @@
 				24BC607D263F8C9C003D9CCF /* File.swift */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		53C536FA26448ED800A7D58A /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				53C536FB26448F1000A7D58A /* VisitedModel.xcdatamodeld */,
+			);
+			path = CoreData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,6 +256,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53C536FD26448F1000A7D58A /* VisitedModel.xcdatamodeld in Sources */,
 				24BC605B263F8136003D9CCF /* VisitView.swift in Sources */,
 				53DCC0142641A0C800699C0B /* PlaceHolderHomeView.swift in Sources */,
 				5312CD0F26442C6400706096 /* DataView.swift in Sources */,
@@ -250,12 +268,14 @@
 				24BC6052263F7F4F003D9CCF /* HomeView.swift in Sources */,
 				24BC606E263F8AFC003D9CCF /* WebView.swift in Sources */,
 				24BC606B263F8A3A003D9CCF /* MediaDetailView.swift in Sources */,
+				53C53702264490AE00A7D58A /* Visited+CoreDataProperties.swift in Sources */,
 				24BC6084263F94C9003D9CCF /* Extensions.swift in Sources */,
 				24BC6087263F9668003D9CCF /* NavigationBarModifier.swift in Sources */,
 				24BC6061263F85CB003D9CCF /* Media.swift in Sources */,
 				53BED5D826434CBE007BA8A4 /* Region.swift in Sources */,
 				24BC6081263F9068003D9CCF /* MediaCellView.swift in Sources */,
 				24BC607E263F8C9C003D9CCF /* File.swift in Sources */,
+				53C53701264490AE00A7D58A /* Visited+CoreDataClass.swift in Sources */,
 				53BED5DF26435210007BA8A4 /* DataModel.swift in Sources */,
 				5312CD0C2644283B00706096 /* CountryCellView.swift in Sources */,
 				53BED5D526434922007BA8A4 /* Country.swift in Sources */,
@@ -493,6 +513,20 @@
 			productName = Kingfisher;
 		};
 /* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		53C536FB26448F1000A7D58A /* VisitedModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				53C536FC26448F1000A7D58A /* VisitedModel.xcdatamodel */,
+			);
+			currentVersion = 53C536FC26448F1000A7D58A /* VisitedModel.xcdatamodel */;
+			name = VisitedModel.xcdatamodeld;
+			path = ../VisitedModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 24BC6035263F793C003D9CCF /* Project object */;
 }
