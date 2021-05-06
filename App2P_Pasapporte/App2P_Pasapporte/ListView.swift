@@ -31,13 +31,13 @@ struct ListView: View {
                                             VStack {
                                                 Text(item.name)
                                                     .font(.largeTitle)
-                                                    .foregroundColor(.white)
+                                                  //  .foregroundColor(.white)
                                                     .padding()
                                             }
                                             
                                         })
                                         
-                                        .listRowBackground(Color(.blue))
+                                       // .listRowBackground(Color(.blue))
                                 
                             }
                             
@@ -53,13 +53,13 @@ struct ListView: View {
                                             VStack {
                                                 Text(item.name)
                                                     .font(.largeTitle)
-                                                    .foregroundColor(.white)
+                                                   // .foregroundColor(.white)
                                                     .padding()
                                             }
                                             
                                         })
                                         
-                                        .listRowBackground(Color(.blue))
+                                       // .listRowBackground(Color(.blue))
                                 
                             }
                         })
@@ -74,13 +74,13 @@ struct ListView: View {
                                             VStack {
                                                 Text(item.name)
                                                     .font(.largeTitle)
-                                                    .foregroundColor(.white)
+                                                  //  .foregroundColor(.white)
                                                     .padding()
                                             }
                                             
                                         })
                                         
-                                        .listRowBackground(Color(.blue))
+                                        //.listRowBackground(Color(.blue))
                                 
                             }
                         })
@@ -95,13 +95,13 @@ struct ListView: View {
                                             VStack {
                                                 Text(item.name)
                                                     .font(.largeTitle)
-                                                    .foregroundColor(.white)
+                                                    //.foregroundColor(.white)
                                                     .padding()
                                             }
                                             
                                         })
                                         
-                                        .listRowBackground(Color(.blue))
+                                        //.listRowBackground(Color(.blue))
                                 
                             }
                         })
@@ -116,13 +116,13 @@ struct ListView: View {
                                             VStack {
                                                 Text(item.name)
                                                     .font(.largeTitle)
-                                                    .foregroundColor(.white)
+                                                   // .foregroundColor(.white)
                                                     .padding()
                                             }
                                             
                                         })
                                         
-                                        .listRowBackground(Color(.blue))
+                                        //.listRowBackground(Color(.blue))
                                 
                             }
                         })
