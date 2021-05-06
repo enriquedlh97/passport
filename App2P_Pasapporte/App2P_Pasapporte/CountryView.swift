@@ -29,6 +29,8 @@ struct CountryView: View {
             .padding(.horizontal, 80)
             Spacer()
             // Here goes MapView
+            MapView(country: country)
+                .padding(.bottom, 40)
         }
         .navigationBarTitle(country.name)
         .navigationBarTitleDisplayMode(.inline)
