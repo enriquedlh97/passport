@@ -38,21 +38,24 @@ class DataModel: ObservableObject {
         var regionCountries = [Country]()
         
         let URL = "https://restcountries-v1.p.rapidapi.com/region/\(regionName)"
-
+        
         // Makes request with specified parameters to get genres data
-        AF.request(URL, method: .get, encoding: URLEncoding.default, headers: HTTPHeaders(headers)).responseData { data in
+        AF.request(URL, method: .get, encoding: URLEncoding.default, headers: HTTPHeaders(headers)).responseData { [self] data in
             // Decodes the data saved in the data variable gotten by the .responseData
             let json = try! JSON(data: data.data!)
-
+            
             // Creates country variable to hold country-sepecific data
             var country: Country
             
             //print(json[0]["name"])
             // Loops over array to get and save the data
             for item in json {
-                print(item.1["latlng"][0])
+                //print(item.1["latlng"][0])
                 
-//                 Each item corresponds to a country. So, for each item, a COuntry object is created and the item's data is saved as the object's attributes. All items/countries of the same region are appended to the corresponding region property of the DataModel
+                var flag: String
+                loadFlag(iso3: item.1["alpha2Code"].stringValue)
+                
+                //                 Each item corresponds to a country. So, for each item, a COuntry object is created and the item's data is saved as the object's attributes. All items/countries of the same region are appended to the corresponding region property of the DataModel
                 country = Country(
                     name: item.1["name"].stringValue,
                     alpha2Code: item.1["alpha2Code"].stringValue,
@@ -61,8 +64,8 @@ class DataModel: ObservableObject {
                     population: item.1["population"].doubleValue,
                     lat: item.1["latlang"][0].floatValue,
                     long: item.1["latlang"][1].floatValue,
-                    flag: loadFlag(iso3: item.1["alpha2Code"].stringValue))
-
+                    flag: "")
+                
                 // Once this is done, the object is appended to the Regions county property array
                 regionCountries.append(country)
             }
@@ -86,45 +89,44 @@ class DataModel: ObservableObject {
         
     }
     
-    func loadFlag(iso3: String) -> String {
+}
+
+func loadFlag(iso3: String) {
+    
+    let url = "https://disease.sh/v3/covid-19/countries/countries/\(iso3)"
+    
+    var flag: String
+    
+    // Makes request to above URL and reads the data via .responseData
+    AF.request(url).responseData { data in // data is going to contain all the data gotten from response
         
-        let url = "https://disease.sh/v3/covid-19/countries/countries/\(iso3)"
+        // converts data from reponse into JSON
+        let json = try! JSON(data: data.data!) // try is to catch exceptions inc ase it is not possible
         
-        // Makes request to above URL and reads the data via .responseData
-        AF.request(url).responseData { data in // data is going to contain all the data gotten from response
-            
-            // converts data from reponse into JSON
-            let json = try! JSON(data: data.data!) // try is to catch exceptions inc ase it is not possible
-            
-            //print(json.count)
-            
-            var unsortedList = [Cases]() // Holds unsorted JSON data
-            var temp: Cases // Saves each case
-            
-            for country in json {
-                // generates temp file
-                temp = Cases(country: country.1["country"].stringValue,
-                             iso: country.1["countryInfo"]["iso3"].stringValue,
-                             lat: country.1["countryInfo"]["lat"].floatValue,
-                             long: country.1["countryInfo"]["long"].floatValue,
-                             flag: country.1["countryInfo"]["flag"].stringValue,
-                             cases: country.1["cases"].doubleValue,
-                             deaths: country.1["deaths"].doubleValue,
-                             recovered: country.1["recovered"].doubleValue,
-                             active: country.1["active"].doubleValue,
-                             critical: country.1["critical"].doubleValue,
-                             population: country.1["population"].doubleValue,
-                             continent: country.1["continent"].stringValue)
-                unsortedList.append(temp) // adds temp file into unsorted list
-            }
-            
-            // sorts the unsroted array
-            self.casesList = unsortedList.sorted {
-                $0.cases > $1.cases // indicates ordering from most cases to less cases
-            }
-            
-        }
+        print(json["flag"].stringValue)
+        
+        
+        //flag = json["flag"].stringValue
+        
+        //            for country in json {
+        //                // generates temp file
+        //                temp = Cases(country: country.1["country"].stringValue,
+        //                             iso: country.1["countryInfo"]["iso3"].stringValue,
+        //                             lat: country.1["countryInfo"]["lat"].floatValue,
+        //                             long: country.1["countryInfo"]["long"].floatValue,
+        //                             flag: country.1["countryInfo"]["flag"].stringValue,
+        //                             cases: country.1["cases"].doubleValue,
+        //                             deaths: country.1["deaths"].doubleValue,
+        //                             recovered: country.1["recovered"].doubleValue,
+        //                             active: country.1["active"].doubleValue,
+        //                             critical: country.1["critical"].doubleValue,
+        //                             population: country.1["population"].doubleValue,
+        //                             continent: country.1["continent"].stringValue)
+        //                unsortedList.append(temp) // adds temp file into unsorted list
+        //            }
         
     }
+    
+    //return flag
     
 }
