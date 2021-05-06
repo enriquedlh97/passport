@@ -12,11 +12,11 @@ import SwiftyJSON
 
 class DataModel: ObservableObject {
     
-    @Published var africa = [Region]()
-    @Published var americas = [Region]()
-    @Published var asia = [Region]()
-    @Published var europe = [Region]()
-    @Published var oceania = [Region]()
+    @Published var africa: Region
+    @Published var americas: Region
+    @Published var asia: Region
+    @Published var europe: Region
+    @Published var oceania: Region
     
     init() {
         getData()
@@ -35,7 +35,7 @@ class DataModel: ObservableObject {
     
     func loadRegionData(regionName: String) {
         
-        var regionProperty: Region
+        var regionCountries = [Country]()
         
         let URL = "https://restcountries-v1.p.rapidapi.com/region/\(regionName)"
 
@@ -63,10 +63,24 @@ class DataModel: ObservableObject {
                     long: item.1["latlang"][1].floatValue,
                     flag: <#T##String#>)
 
-                    id: g.1["id"].intValue,
-                    name: g.1["name"].stringValue
-                // One this is done, the objetc is appended to the genre array
-                self.genres.append(genre)
+                // Once this is done, the object is appended to the Regions county property array
+                regionCountries.append(country)
+            }
+            
+            switch regionName {
+            case "africa":
+                self.africa = Region(regionName: regionName, countriesList: regionCountries)
+            case "americas":
+                self.americas = Region(regionName: regionName, countriesList: regionCountries)
+            case "asia":
+                self.asia = Region(regionName: regionName, countriesList: regionCountries)
+            case "europe":
+                self.europe = Region(regionName: regionName, countriesList: regionCountries)
+            case "oceania":
+                self.oceania = Region(regionName: regionName, countriesList: regionCountries)
+                
+            default:
+                print("None")
             }
         }
         
