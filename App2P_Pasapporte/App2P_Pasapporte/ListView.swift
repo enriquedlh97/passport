@@ -23,10 +23,10 @@ struct ListView: View {
                     Section(
                         header: Text("Africa"),
                         content: {
-                            ForEach(data.africa) { item in
+                            ForEach(data.africa?.countriesList) { item in
                                 
                                     NavigationLink(
-                                        destination: DetailView(color: item),
+                                        destination: CountryView(),
                                         label: {
                                             VStack {
                                                 Text(item.name)
