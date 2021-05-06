@@ -52,8 +52,7 @@ class DataModel: ObservableObject {
             for item in json {
                 //print(item.1["latlng"][0])
                 
-                var flag: String
-                loadFlag(iso3: item.1["alpha2Code"].stringValue)
+                //loadFlag(iso3: item.1["alpha2Code"].stringValue)
                 
                 //                 Each item corresponds to a country. So, for each item, a COuntry object is created and the item's data is saved as the object's attributes. All items/countries of the same region are appended to the corresponding region property of the DataModel
                 country = Country(
@@ -88,45 +87,45 @@ class DataModel: ObservableObject {
         }
         
     }
-    
-}
-
-func loadFlag(iso3: String) {
-    
-    let url = "https://disease.sh/v3/covid-19/countries/countries/\(iso3)"
-    
-    var flag: String
-    
-    // Makes request to above URL and reads the data via .responseData
-    AF.request(url).responseData { data in // data is going to contain all the data gotten from response
+    func loadFlag(iso3: String) {
         
-        // converts data from reponse into JSON
-        let json = try! JSON(data: data.data!) // try is to catch exceptions inc ase it is not possible
+        let url = "https://disease.sh/v3/covid-19/countries/countries/\(iso3)"
         
-        print(json["flag"].stringValue)
+        var flag: String
         
+        // Makes request to above URL and reads the data via .responseData
+        AF.request(url).responseData { data in // data is going to contain all the data gotten from response
+            
+            // converts data from reponse into JSON
+            let json = try! JSON(data: data.data!) // try is to catch exceptions inc ase it is not possible
+            
+            print(json["flag"].stringValue)
+            
+            
+            //flag = json["flag"].stringValue
+            
+            //            for country in json {
+            //                // generates temp file
+            //                temp = Cases(country: country.1["country"].stringValue,
+            //                             iso: country.1["countryInfo"]["iso3"].stringValue,
+            //                             lat: country.1["countryInfo"]["lat"].floatValue,
+            //                             long: country.1["countryInfo"]["long"].floatValue,
+            //                             flag: country.1["countryInfo"]["flag"].stringValue,
+            //                             cases: country.1["cases"].doubleValue,
+            //                             deaths: country.1["deaths"].doubleValue,
+            //                             recovered: country.1["recovered"].doubleValue,
+            //                             active: country.1["active"].doubleValue,
+            //                             critical: country.1["critical"].doubleValue,
+            //                             population: country.1["population"].doubleValue,
+            //                             continent: country.1["continent"].stringValue)
+            //                unsortedList.append(temp) // adds temp file into unsorted list
+            //            }
+            
+        }
         
-        //flag = json["flag"].stringValue
-        
-        //            for country in json {
-        //                // generates temp file
-        //                temp = Cases(country: country.1["country"].stringValue,
-        //                             iso: country.1["countryInfo"]["iso3"].stringValue,
-        //                             lat: country.1["countryInfo"]["lat"].floatValue,
-        //                             long: country.1["countryInfo"]["long"].floatValue,
-        //                             flag: country.1["countryInfo"]["flag"].stringValue,
-        //                             cases: country.1["cases"].doubleValue,
-        //                             deaths: country.1["deaths"].doubleValue,
-        //                             recovered: country.1["recovered"].doubleValue,
-        //                             active: country.1["active"].doubleValue,
-        //                             critical: country.1["critical"].doubleValue,
-        //                             population: country.1["population"].doubleValue,
-        //                             continent: country.1["continent"].stringValue)
-        //                unsortedList.append(temp) // adds temp file into unsorted list
-        //            }
+        //return flag
         
     }
-    
-    //return flag
-    
 }
+
+
