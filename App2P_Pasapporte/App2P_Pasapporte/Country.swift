@@ -22,6 +22,7 @@ struct Country: Identifiable {
     var lat: Float  // latitude
     var long: Float // longitude
     var flag: String //url with flag of country
+    var capital: String
 }
 
 
