@@ -52,9 +52,9 @@ class DataModel: ObservableObject {
             for item in json {
                 //print(item.1["latlng"][0])
                 
-                //loadFlag(iso3: item.1["alpha2Code"].stringValue)
+                //self.loadFlag(iso3: item.1["alpha2Code"].stringValue)
                 
-                //                 Each item corresponds to a country. So, for each item, a COuntry object is created and the item's data is saved as the object's attributes. All items/countries of the same region are appended to the corresponding region property of the DataModel
+                //                 Each item corresponds to a country. So, for each item, a Country object is created and the item's data is saved as the object's attributes. All items/countries of the same region are appended to the corresponding region property of the DataModel
                 country = Country(
                     name: item.1["name"].stringValue,
                     alpha2Code: item.1["alpha2Code"].stringValue,
