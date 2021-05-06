@@ -63,7 +63,8 @@ class DataModel: ObservableObject {
                     population: item.1["population"].doubleValue,
                     lat: item.1["latlng"][0].floatValue,
                     long: item.1["latlng"][1].floatValue,
-                flag: "https://disease.sh/assets/img/flags/\(item.1["alpha2Code"].stringValue.lowercased()).png")
+                flag: "https://disease.sh/assets/img/flags/\(item.1["alpha2Code"].stringValue.lowercased()).png",
+                    capital: item.1["capital"].stringValue)
                 
                 // Once this is done, the object is appended to the Regions county property array
                 regionCountries.append(country)
