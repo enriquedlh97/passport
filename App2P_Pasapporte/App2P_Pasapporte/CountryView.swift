@@ -22,6 +22,9 @@ struct CountryView: View {
                 .padding(.top, 30)
             VStack {
                 // Contains DataView
+                DataView(title: "Country:", text: country.name, isValue: false)
+                DataView(title: "Subregion:", text: country.subregion, isValue: false)
+                DataView(title: "Population:", value: country.population, isValue: true)
             }
             .padding(.horizontal, 80)
             Spacer()

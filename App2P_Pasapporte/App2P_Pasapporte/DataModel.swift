@@ -54,6 +54,7 @@ class DataModel: ObservableObject {
                 
                 
                 //                 Each item corresponds to a country. So, for each item, a Country object is created and the item's data is saved as the object's attributes. All items/countries of the same region are appended to the corresponding region property of the DataModel
+                print(item.1["flag"].stringValue)
                 country = Country(
                     name: item.1["name"].stringValue,
                     alpha2Code: item.1["alpha2Code"].stringValue,
@@ -62,7 +63,7 @@ class DataModel: ObservableObject {
                     population: item.1["population"].doubleValue,
                     lat: item.1["latlang"][0].floatValue,
                     long: item.1["latlang"][1].floatValue,
-                    flag: "https://disease.sh/assets/img/flags/\(item.1["alpha2Code"].stringValue.lowercased()).png")
+                flag: "https://disease.sh/assets/img/flags/\(item.1["alpha2Code"].stringValue.lowercased()).png")
                 
                 // Once this is done, the object is appended to the Regions county property array
                 regionCountries.append(country)
