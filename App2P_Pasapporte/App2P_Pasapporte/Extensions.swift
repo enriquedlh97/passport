@@ -21,7 +21,7 @@ extension Region {
 
 extension Country {
     
-    public static var defaultCountry = Country(name: "Algeria", alpha2Code: "DZ", alpha3Code: "DZA", subregion: "Northern Africa", population: 37900000, lat: 28, long: 3, flag: "https://disease.sh/assets/img/flags/dz.png")
+    public static var defaultCountry = Country(name: "Algeria", alpha2Code: "DZ", alpha3Code: "DZA", subregion: "Northern Africa", population: 37900000, lat: 28, long: 3, flag: "https://disease.sh/assets/img/flags/dz.png", capital: "Algiers")
     
 }
 

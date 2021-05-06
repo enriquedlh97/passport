@@ -24,6 +24,7 @@ struct CountryView: View {
             VStack {
                 // Contains DataView
                 DataView(title: "Country:", text: country.name, isValue: false)
+                DataView(title: "Capital:", text: country.capital, isValue: false)
                 DataView(title: "Subregion:", text: country.subregion, isValue: false)
                 DataView(title: "Population:", value: country.population, isValue: true)
             }
