@@ -28,16 +28,14 @@ class DataModel: ObservableObject {
         
         for region in regions {
             
-            var regionProperty: Region
-            
-            regionProperty.regionName = region
-            
-            loadRegionData(regionName: region, regionProperty: regionProperty)
+            loadRegionData(regionName: region)
         }
         
     }
     
-    func loadRegionData(regionName: String, regionProperty: Region) {
+    func loadRegionData(regionName: String) {
+        
+        var regionProperty: Region
         
         let URL = "https://restcountries-v1.p.rapidapi.com/region/\(regionName)"
 
@@ -52,12 +50,21 @@ class DataModel: ObservableObject {
             //print(json[0]["name"])
             // Loops over array to get and save the data
             for item in json {
-                print(item.1["region"])
+                print(item.1["latlng"][0])
                 
-                // Each item corresponds to a country. So, for each item, a COuntry object is created and the item's data is saved as the object's attributes. All items/countries of the same region are appended to the corresponding region property of the DataModel
-                genre = Genre(
+//                 Each item corresponds to a country. So, for each item, a COuntry object is created and the item's data is saved as the object's attributes. All items/countries of the same region are appended to the corresponding region property of the DataModel
+                country = Country(
+                    name: item.1["name"].stringValue,
+                    alpha2Code: item.1["alpha2Code"].stringValue,
+                    alpha3Code: item.1["alpha2Code"].stringValue,
+                    subregion: item.1["subregion"].stringValue,
+                    population: item.1["population"].doubleValue,
+                    lat: item.1["latlang"][0].floatValue,
+                    long: item.1["latlang"][1].floatValue,
+                    flag: <#T##String#>)
+
                     id: g.1["id"].intValue,
-                    name: g.1["name"].stringValue)
+                    name: g.1["name"].stringValue
                 // One this is done, the objetc is appended to the genre array
                 self.genres.append(genre)
             }
