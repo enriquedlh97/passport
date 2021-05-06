@@ -23,8 +23,8 @@ struct MapView: View {
         // received from the country variable
         .onAppear {
             region = MKCoordinateRegion(center:
-                                            CLLocationCoordinate2D(latitude: CLLocationDegrees(Float(country.lat)),
-                                                                   longitude: CLLocationDegrees(Float(country.long))),
+                                            CLLocationCoordinate2D(latitude: CLLocationDegrees(country.lat),
+                                                                   longitude: CLLocationDegrees(country.long)),
                                         // Indicates the zoom on map
                                         span: MKCoordinateSpan(latitudeDelta: 15, longitudeDelta: 15))
         }
