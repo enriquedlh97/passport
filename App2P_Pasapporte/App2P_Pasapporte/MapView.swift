@@ -22,6 +22,7 @@ struct MapView: View {
         // This makes sure that when this screen appears, the region variable is updated with the data
         // received from the country variable
         .onAppear {
+            print(country)
             region = MKCoordinateRegion(center:
                                             CLLocationCoordinate2D(latitude: CLLocationDegrees(country.lat),
                                                                    longitude: CLLocationDegrees(country.long)),
