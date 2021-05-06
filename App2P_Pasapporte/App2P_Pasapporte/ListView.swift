@@ -27,15 +27,8 @@ struct ListView: View {
                                 
                                     NavigationLink(
                                         destination: CountryView(),
-                                        label: {
-                                            VStack {
-                                                Text(item.name)
-                                                    .font(.largeTitle)
-                                                  //  .foregroundColor(.white)
-                                                    .padding()
-                                            }
-                                            
-                                        })
+                                        label: {}
+                                    )
                                         
                                        // .listRowBackground(Color(.blue))
                                 
