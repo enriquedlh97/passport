@@ -11,6 +11,7 @@ import Kingfisher
 struct CountryView: View {
     
     var country: Country
+    @StateObject var data: DataModel
     
     var body: some View {
         VStack {
@@ -39,6 +40,6 @@ struct CountryView: View {
 
 struct CountryView_Previews: PreviewProvider {
     static var previews: some View {
-        CountryView(country: Country.defaultCountry)
+        CountryView(country: Country.defaultCountry, data: DataModel())
     }
 }

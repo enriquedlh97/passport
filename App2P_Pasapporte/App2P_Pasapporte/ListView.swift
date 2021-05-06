@@ -26,7 +26,7 @@ struct ListView: View {
                             ForEach(data.americas?.countriesList ?? [Country.defaultCountry]) { item in
                                 
                                 NavigationLink(
-                                    destination: CountryView(country: item),
+                                    destination: CountryView(country: item, data: data),
                                     label: {CountryCellView(country: item)}
                                 )
                                 
@@ -40,7 +40,7 @@ struct ListView: View {
                             ForEach(data.europe?.countriesList ?? [Country.defaultCountry]) { item in
                                 
                                 NavigationLink(
-                                    destination: CountryView(country: item),
+                                    destination: CountryView(country: item, data: data),
                                     label: {CountryCellView(country: item)}
                                 )
                                 
@@ -54,7 +54,7 @@ struct ListView: View {
                             ForEach(data.africa?.countriesList ?? [Country.defaultCountry]) { item in
                                 
                                 NavigationLink(
-                                    destination: CountryView(country: item),
+                                    destination: CountryView(country: item, data: data),
                                     label: {CountryCellView(country: item)}
                                 )
                                 
@@ -69,7 +69,7 @@ struct ListView: View {
                             ForEach(data.asia?.countriesList ?? [Country.defaultCountry]) { item in
                                 
                                 NavigationLink(
-                                    destination: CountryView(country: item),
+                                    destination: CountryView(country: item, data: data),
                                     label: {CountryCellView(country: item)}
                                 )
                                 
@@ -83,7 +83,7 @@ struct ListView: View {
                             ForEach(data.oceania?.countriesList ?? [Country.defaultCountry]) { item in
                                 
                                 NavigationLink(
-                                    destination: CountryView(country: item),
+                                    destination: CountryView(country: item, data: data),
                                     label: {CountryCellView(country: item)}
                                 )
                                 
