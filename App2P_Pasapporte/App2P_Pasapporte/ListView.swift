@@ -23,7 +23,7 @@ struct ListView: View {
                     Section(
                         header: Text("Africa"),
                         content: {
-                            ForEach(data.africa?.countriesList) { item in
+                            ForEach(data.africa?.countriesList ?? [Country.defaultCountry]) { item in
                                 
                                     NavigationLink(
                                         destination: CountryView(),
@@ -45,22 +45,86 @@ struct ListView: View {
                     Section(
                         header: Text("Americas"),
                         content: {
-                            
+                            ForEach(data.americas?.countriesList ?? [Country.defaultCountry]) { item in
+                                
+                                    NavigationLink(
+                                        destination: CountryView(),
+                                        label: {
+                                            VStack {
+                                                Text(item.name)
+                                                    .font(.largeTitle)
+                                                    .foregroundColor(.white)
+                                                    .padding()
+                                            }
+                                            
+                                        })
+                                        
+                                        .listRowBackground(Color(.blue))
+                                
+                            }
                         })
                     Section(
                         header: Text("Asia"),
                         content: {
-                            
+                            ForEach(data.asia?.countriesList ?? [Country.defaultCountry]) { item in
+                                
+                                    NavigationLink(
+                                        destination: CountryView(),
+                                        label: {
+                                            VStack {
+                                                Text(item.name)
+                                                    .font(.largeTitle)
+                                                    .foregroundColor(.white)
+                                                    .padding()
+                                            }
+                                            
+                                        })
+                                        
+                                        .listRowBackground(Color(.blue))
+                                
+                            }
                         })
                     Section(
                         header: Text("Europe"),
                         content: {
-                            
+                            ForEach(data.europe?.countriesList ?? [Country.defaultCountry]) { item in
+                                
+                                    NavigationLink(
+                                        destination: CountryView(),
+                                        label: {
+                                            VStack {
+                                                Text(item.name)
+                                                    .font(.largeTitle)
+                                                    .foregroundColor(.white)
+                                                    .padding()
+                                            }
+                                            
+                                        })
+                                        
+                                        .listRowBackground(Color(.blue))
+                                
+                            }
                         })
                     Section(
                         header: Text("Oceania"),
                         content: {
-                            
+                            ForEach(data.oceania?.countriesList ?? [Country.defaultCountry]) { item in
+                                
+                                    NavigationLink(
+                                        destination: CountryView(),
+                                        label: {
+                                            VStack {
+                                                Text(item.name)
+                                                    .font(.largeTitle)
+                                                    .foregroundColor(.white)
+                                                    .padding()
+                                            }
+                                            
+                                        })
+                                        
+                                        .listRowBackground(Color(.blue))
+                                
+                            }
                         })
                 }
                 
