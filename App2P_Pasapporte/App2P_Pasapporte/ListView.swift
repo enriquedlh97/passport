@@ -23,6 +23,23 @@ struct ListView: View {
                     Section(
                         header: Text("Africa"),
                         content: {
+                            ForEach(data.africa) { item in
+                                
+                                    NavigationLink(
+                                        destination: DetailView(color: item),
+                                        label: {
+                                            VStack {
+                                                Text(item.name)
+                                                    .font(.largeTitle)
+                                                    .foregroundColor(.white)
+                                                    .padding()
+                                            }
+                                            
+                                        })
+                                        
+                                        .listRowBackground(Color(.blue))
+                                
+                            }
                             
                         })
                     Section(
