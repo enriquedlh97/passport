@@ -27,7 +27,7 @@ struct ListView: View {
                                 
                                     NavigationLink(
                                         destination: CountryView(),
-                                        label: {}
+                                        label: {CountryCellView(country: item)}
                                     )
                                         
                                        // .listRowBackground(Color(.blue))
@@ -42,15 +42,8 @@ struct ListView: View {
                                 
                                     NavigationLink(
                                         destination: CountryView(),
-                                        label: {
-                                            VStack {
-                                                Text(item.name)
-                                                    .font(.largeTitle)
-                                                   // .foregroundColor(.white)
-                                                    .padding()
-                                            }
-                                            
-                                        })
+                                        label: {CountryCellView(country: item)}
+                                    )
                                         
                                        // .listRowBackground(Color(.blue))
                                 
@@ -63,15 +56,8 @@ struct ListView: View {
                                 
                                     NavigationLink(
                                         destination: CountryView(),
-                                        label: {
-                                            VStack {
-                                                Text(item.name)
-                                                    .font(.largeTitle)
-                                                  //  .foregroundColor(.white)
-                                                    .padding()
-                                            }
-                                            
-                                        })
+                                        label: {CountryCellView(country: item)}
+                                    )
                                         
                                         //.listRowBackground(Color(.blue))
                                 
@@ -84,15 +70,8 @@ struct ListView: View {
                                 
                                     NavigationLink(
                                         destination: CountryView(),
-                                        label: {
-                                            VStack {
-                                                Text(item.name)
-                                                    .font(.largeTitle)
-                                                    //.foregroundColor(.white)
-                                                    .padding()
-                                            }
-                                            
-                                        })
+                                        label: {CountryCellView(country: item)}
+                                    )
                                         
                                         //.listRowBackground(Color(.blue))
                                 
@@ -105,15 +84,8 @@ struct ListView: View {
                                 
                                     NavigationLink(
                                         destination: CountryView(),
-                                        label: {
-                                            VStack {
-                                                Text(item.name)
-                                                    .font(.largeTitle)
-                                                   // .foregroundColor(.white)
-                                                    .padding()
-                                            }
-                                            
-                                        })
+                                        label: {CountryCellView(country: item)}
+                                    )
                                         
                                         //.listRowBackground(Color(.blue))
                                 
