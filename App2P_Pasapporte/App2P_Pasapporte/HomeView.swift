@@ -12,25 +12,25 @@ import SwiftUI
 
 struct HomeView: View {
     
-    @StateObject var media = MediaModel()
+    @StateObject var data = DataModel()
     
     var body: some View {
         
         NavigationView {
             TabView {
-                ListView()
+                ListView(data: data)
                     .tabItem {
                         Label("Countries", systemImage: "pin.circle.fill")
                     }
-                VisitView(media: media)
+                VisitView(data: data)
                     .tabItem {
                         Label("Visited", systemImage: "checkmark.circle.fill")
                         
                     }
-                WeatherView(media: media)
-                    .tabItem {
-                        Label("Weather", systemImage: "sun.max.fill")
-                    }
+//                WeatherView(media: data)
+//                    .tabItem {
+//                        Label("Weather", systemImage: "sun.max.fill")
+//                    }
                 
             }
             
