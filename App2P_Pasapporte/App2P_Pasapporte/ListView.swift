@@ -21,6 +21,34 @@ struct ListView: View {
             VStack {
                 List {
                     Section(
+                        header: Text("Americas"),
+                        content: {
+                            ForEach(data.americas?.countriesList ?? [Country.defaultCountry]) { item in
+                                
+                                    NavigationLink(
+                                        destination: CountryView(),
+                                        label: {CountryCellView(country: item)}
+                                    )
+                                        
+                                       // .listRowBackground(Color(.blue))
+                                
+                            }
+                        })
+                    Section(
+                        header: Text("Europe"),
+                        content: {
+                            ForEach(data.europe?.countriesList ?? [Country.defaultCountry]) { item in
+                                
+                                    NavigationLink(
+                                        destination: CountryView(),
+                                        label: {CountryCellView(country: item)}
+                                    )
+                                        
+                                        //.listRowBackground(Color(.blue))
+                                
+                            }
+                        })
+                    Section(
                         header: Text("Africa"),
                         content: {
                             ForEach(data.africa?.countriesList ?? [Country.defaultCountry]) { item in
@@ -36,37 +64,9 @@ struct ListView: View {
                             
                         })
                     Section(
-                        header: Text("Americas"),
-                        content: {
-                            ForEach(data.americas?.countriesList ?? [Country.defaultCountry]) { item in
-                                
-                                    NavigationLink(
-                                        destination: CountryView(),
-                                        label: {CountryCellView(country: item)}
-                                    )
-                                        
-                                       // .listRowBackground(Color(.blue))
-                                
-                            }
-                        })
-                    Section(
                         header: Text("Asia"),
                         content: {
                             ForEach(data.asia?.countriesList ?? [Country.defaultCountry]) { item in
-                                
-                                    NavigationLink(
-                                        destination: CountryView(),
-                                        label: {CountryCellView(country: item)}
-                                    )
-                                        
-                                        //.listRowBackground(Color(.blue))
-                                
-                            }
-                        })
-                    Section(
-                        header: Text("Europe"),
-                        content: {
-                            ForEach(data.europe?.countriesList ?? [Country.defaultCountry]) { item in
                                 
                                     NavigationLink(
                                         destination: CountryView(),
