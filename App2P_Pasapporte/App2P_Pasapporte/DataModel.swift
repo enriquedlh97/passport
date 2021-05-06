@@ -61,7 +61,7 @@ class DataModel: ObservableObject {
                     population: item.1["population"].doubleValue,
                     lat: item.1["latlang"][0].floatValue,
                     long: item.1["latlang"][1].floatValue,
-                    flag: <#T##String#>)
+                    flag: loadFlag(iso3: item.1["alpha2Code"].stringValue))
 
                 // Once this is done, the object is appended to the Regions county property array
                 regionCountries.append(country)
@@ -86,7 +86,44 @@ class DataModel: ObservableObject {
         
     }
     
-    func loadFlag(iso2: String) {
+    func loadFlag(iso3: String) -> String {
+        
+        let url = "https://disease.sh/v3/covid-19/countries/countries/\(iso3)"
+        
+        // Makes request to above URL and reads the data via .responseData
+        AF.request(url).responseData { data in // data is going to contain all the data gotten from response
+            
+            // converts data from reponse into JSON
+            let json = try! JSON(data: data.data!) // try is to catch exceptions inc ase it is not possible
+            
+            //print(json.count)
+            
+            var unsortedList = [Cases]() // Holds unsorted JSON data
+            var temp: Cases // Saves each case
+            
+            for country in json {
+                // generates temp file
+                temp = Cases(country: country.1["country"].stringValue,
+                             iso: country.1["countryInfo"]["iso3"].stringValue,
+                             lat: country.1["countryInfo"]["lat"].floatValue,
+                             long: country.1["countryInfo"]["long"].floatValue,
+                             flag: country.1["countryInfo"]["flag"].stringValue,
+                             cases: country.1["cases"].doubleValue,
+                             deaths: country.1["deaths"].doubleValue,
+                             recovered: country.1["recovered"].doubleValue,
+                             active: country.1["active"].doubleValue,
+                             critical: country.1["critical"].doubleValue,
+                             population: country.1["population"].doubleValue,
+                             continent: country.1["continent"].stringValue)
+                unsortedList.append(temp) // adds temp file into unsorted list
+            }
+            
+            // sorts the unsroted array
+            self.casesList = unsortedList.sorted {
+                $0.cases > $1.cases // indicates ordering from most cases to less cases
+            }
+            
+        }
         
     }
     
