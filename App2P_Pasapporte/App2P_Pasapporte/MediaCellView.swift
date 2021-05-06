@@ -16,33 +16,33 @@ struct MediaCellView: View {
             VStack {
                 ZStack {
                     
-// LO DEJO COMENTADO EN CASO DE QUE SE VAYA A AGREGAR UNA FOTO DEL PAÍS/CIUDAD O BANDERA
-//                    VStack {
-//                        Image(media.images[0])
-//                            .resizable()
-//                            .scaledToFit()
-//                            .frame(width: geo.size.width-40)
-//                            .cornerRadius(40)
-//                            .overlay(
-//                                ZStack {
-//                                    RoundedRectangle(cornerRadius: 40)
-//                                        .stroke(Color("SourLemon"), style: StrokeStyle(lineWidth: 10, lineCap: .round, lineJoin: .round))
-//                                    VStack {
-//                                        Spacer()
-//                                        HStack {
-//                                            ScoreView(score: media.score)
-//                                            Spacer()
-//                                        }
-//                                        .padding(.leading,40)
-//                                        .padding(.bottom,-35)
-//                                    }
-//                                }
-//
-//                            )
-//                            .padding(.horizontal,20)
-//                            .padding(.top,10)
-//
-//                    }
+                    // LO DEJO COMENTADO EN CASO DE QUE SE VAYA A AGREGAR UNA FOTO DEL PAÍS/CIUDAD O BANDERA
+                    //                    VStack {
+                    //                        Image(media.images[0])
+                    //                            .resizable()
+                    //                            .scaledToFit()
+                    //                            .frame(width: geo.size.width-40)
+                    //                            .cornerRadius(40)
+                    //                            .overlay(
+                    //                                ZStack {
+                    //                                    RoundedRectangle(cornerRadius: 40)
+                    //                                        .stroke(Color("SourLemon"), style: StrokeStyle(lineWidth: 10, lineCap: .round, lineJoin: .round))
+                    //                                    VStack {
+                    //                                        Spacer()
+                    //                                        HStack {
+                    //                                            ScoreView(score: media.score)
+                    //                                            Spacer()
+                    //                                        }
+                    //                                        .padding(.leading,40)
+                    //                                        .padding(.bottom,-35)
+                    //                                    }
+                    //                                }
+                    //
+                    //                            )
+                    //                            .padding(.horizontal,20)
+                    //                            .padding(.top,10)
+                    //
+                    //                    }
                     
                     
                 }
@@ -59,7 +59,7 @@ struct MediaCellView: View {
                 }
                 .foregroundColor(Color(#colorLiteral(red: 0.1019607857, green: 0.2784313858, blue: 0.400000006, alpha: 1)))
                 .padding(.leading,20)
-
+                
             }
         }
     }

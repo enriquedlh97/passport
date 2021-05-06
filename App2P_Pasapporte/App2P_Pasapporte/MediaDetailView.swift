@@ -48,31 +48,31 @@ struct MediaDetailView: View {
                             })
                     }
                     
-// LO DEJO COMENTADO EN CASO DE QUE SE VAYA A AGREGAR UNA FOTO DEL PAÍS/CIUDAD O BANDERA
-//
-//                    VStack {
-//                        TabView {
-//                            ForEach(media.images, id:\.self) { image in
-//                                Image(image)
-//                                    .resizable()
-//                                    .scaledToFit()
-//                                    .frame(width: geo.size.width-40)
-//                                    .cornerRadius(40)
-//                                    .overlay(
-//                                        ZStack {
-//                                            RoundedRectangle(cornerRadius: 40)
-//                                                .stroke(Color("SourLemon"), style: StrokeStyle(lineWidth: 10, lineCap: .round, lineJoin: .round))
-//                                        }
-//
-//                                    )
-//                                    .padding(.horizontal,20)
-//                                    .padding(.vertical,10)
-//
-//                            }
-//                        }
-//                        .tabViewStyle(PageTabViewStyle())
-//                        .indexViewStyle(PageIndexViewStyle(backgroundDisplayMode: .always))
-//                    }
+                    // LO DEJO COMENTADO EN CASO DE QUE SE VAYA A AGREGAR UNA FOTO DEL PAÍS/CIUDAD O BANDERA
+                    //
+                    //                    VStack {
+                    //                        TabView {
+                    //                            ForEach(media.images, id:\.self) { image in
+                    //                                Image(image)
+                    //                                    .resizable()
+                    //                                    .scaledToFit()
+                    //                                    .frame(width: geo.size.width-40)
+                    //                                    .cornerRadius(40)
+                    //                                    .overlay(
+                    //                                        ZStack {
+                    //                                            RoundedRectangle(cornerRadius: 40)
+                    //                                                .stroke(Color("SourLemon"), style: StrokeStyle(lineWidth: 10, lineCap: .round, lineJoin: .round))
+                    //                                        }
+                    //
+                    //                                    )
+                    //                                    .padding(.horizontal,20)
+                    //                                    .padding(.vertical,10)
+                    //
+                    //                            }
+                    //                        }
+                    //                        .tabViewStyle(PageTabViewStyle())
+                    //                        .indexViewStyle(PageIndexViewStyle(backgroundDisplayMode: .always))
+                    //                    }
                 }
             }
             .navigationBarTitle(media.country, displayMode: .inline)

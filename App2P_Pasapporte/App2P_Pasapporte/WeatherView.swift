@@ -22,7 +22,7 @@ struct WeatherView: View {
                             .font(.Lemon(size: 35))
                             .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                             .padding(.top,50)
-                            
+                        
                     }
                     VStack {
                         ScrollView(.horizontal, showsIndicators: false) {

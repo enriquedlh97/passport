@@ -48,7 +48,7 @@ struct VisitView: View {
         }
         
     }
-
+    
 }
 
 struct VisitView_Previews: PreviewProvider {

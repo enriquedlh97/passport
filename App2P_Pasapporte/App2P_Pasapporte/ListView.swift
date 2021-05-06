@@ -25,12 +25,12 @@ struct ListView: View {
                         content: {
                             ForEach(data.americas?.countriesList ?? [Country.defaultCountry]) { item in
                                 
-                                    NavigationLink(
-                                        destination: CountryView(country: item),
-                                        label: {CountryCellView(country: item)}
-                                    )
-                                        
-                                       // .listRowBackground(Color(.blue))
+                                NavigationLink(
+                                    destination: CountryView(country: item),
+                                    label: {CountryCellView(country: item)}
+                                )
+                                
+                                // .listRowBackground(Color(.blue))
                                 
                             }
                         })
@@ -39,12 +39,12 @@ struct ListView: View {
                         content: {
                             ForEach(data.europe?.countriesList ?? [Country.defaultCountry]) { item in
                                 
-                                    NavigationLink(
-                                        destination: CountryView(),
-                                        label: {CountryCellView(country: item)}
-                                    )
-                                        
-                                        //.listRowBackground(Color(.blue))
+                                NavigationLink(
+                                    destination: CountryView(),
+                                    label: {CountryCellView(country: item)}
+                                )
+                                
+                                //.listRowBackground(Color(.blue))
                                 
                             }
                         })
@@ -53,12 +53,12 @@ struct ListView: View {
                         content: {
                             ForEach(data.africa?.countriesList ?? [Country.defaultCountry]) { item in
                                 
-                                    NavigationLink(
-                                        destination: CountryView(),
-                                        label: {CountryCellView(country: item)}
-                                    )
-                                        
-                                       // .listRowBackground(Color(.blue))
+                                NavigationLink(
+                                    destination: CountryView(),
+                                    label: {CountryCellView(country: item)}
+                                )
+                                
+                                // .listRowBackground(Color(.blue))
                                 
                             }
                             
@@ -68,12 +68,12 @@ struct ListView: View {
                         content: {
                             ForEach(data.asia?.countriesList ?? [Country.defaultCountry]) { item in
                                 
-                                    NavigationLink(
-                                        destination: CountryView(),
-                                        label: {CountryCellView(country: item)}
-                                    )
-                                        
-                                        //.listRowBackground(Color(.blue))
+                                NavigationLink(
+                                    destination: CountryView(),
+                                    label: {CountryCellView(country: item)}
+                                )
+                                
+                                //.listRowBackground(Color(.blue))
                                 
                             }
                         })
@@ -82,12 +82,12 @@ struct ListView: View {
                         content: {
                             ForEach(data.oceania?.countriesList ?? [Country.defaultCountry]) { item in
                                 
-                                    NavigationLink(
-                                        destination: CountryView(),
-                                        label: {CountryCellView(country: item)}
-                                    )
-                                        
-                                        //.listRowBackground(Color(.blue))
+                                NavigationLink(
+                                    destination: CountryView(),
+                                    label: {CountryCellView(country: item)}
+                                )
+                                
+                                //.listRowBackground(Color(.blue))
                                 
                             }
                         })

@@ -27,5 +27,5 @@ class MediaModel: ObservableObject {
         list.append(media)
         
     }
-
+    
 }

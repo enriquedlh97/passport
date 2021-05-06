@@ -13,10 +13,10 @@ import SwiftyJSON
 class DataModel: ObservableObject {
     
     @Published var africa: Region?
-        @Published var americas: Region?
-        @Published var asia: Region?
-        @Published var europe: Region?
-        @Published var oceania: Region?
+    @Published var americas: Region?
+    @Published var asia: Region?
+    @Published var europe: Region?
+    @Published var oceania: Region?
     
     init() {
         getData()
@@ -51,7 +51,7 @@ class DataModel: ObservableObject {
             // Loops over array to get and save the data
             for item in json {
                 //print(item.1["latlng"][0])
-        
+                
                 
                 //                 Each item corresponds to a country. So, for each item, a Country object is created and the item's data is saved as the object's attributes. All items/countries of the same region are appended to the corresponding region property of the DataModel
                 country = Country(
@@ -81,7 +81,7 @@ class DataModel: ObservableObject {
                 self.europe = Region(regionName: regionName, countriesList: regionCountries)
             case "oceania":
                 self.oceania = Region(regionName: regionName, countriesList: regionCountries)
-
+                
             default:
                 print("None")
             }
