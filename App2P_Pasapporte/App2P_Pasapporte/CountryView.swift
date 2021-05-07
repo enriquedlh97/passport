@@ -28,7 +28,9 @@ struct CountryView: View {
                 DataView(title: "Capital:", text: country.capital, isValue: false)
                 DataView(title: "Subregion:", text: country.subregion, isValue: false)
                 DataView(title: "Population:", value: country.population, isValue: true)
-                VStack {
+                Spacer()
+                HStack {
+                    Text("Visited")
                     // Right side
                     AddToVisitedView(country: country, region: region)
                         //.padding(.trailing, 20)
