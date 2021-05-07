@@ -28,7 +28,7 @@ struct VisitView: View {
                 ScrollView(.vertical, showsIndicators: false) {
                     ForEach(visited) { country in
                         VStack {
-                            CountryCellView(country: country)
+                            VisitedCellView(country: country)
                         }
                         // Adds functions to each row
                         .contextMenu {
