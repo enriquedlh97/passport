@@ -25,7 +25,7 @@ struct VisitView: View {
         // ******** STARTS ORIGINAL *******
         VStack {
             ZStack {
-                ScrollView(.vertical, showsIndicators: false) {
+                List {
                     ForEach(visited) { country in
                         VStack {
                             NavigationLink(
