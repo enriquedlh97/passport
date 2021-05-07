@@ -33,7 +33,6 @@ struct CountryView: View {
                     Text("Visited")
                     // Right side
                     AddToVisitedView(country: country, region: region)
-                        //.padding(.trailing, 20)
                 }
             }
             .padding(.horizontal, 80)
