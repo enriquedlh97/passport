@@ -27,7 +27,7 @@ struct AddToVisitedView: View {
                 Button(action: {
                     self.SaveCountryToVisited(country: country, region: region)
                 }) {
-                    Image(systemName: "mapping.circle")
+                    Image(systemName: "mappin.circle")
                         .foregroundColor(.gray)
                         .font(.system(size: 24))
                 }
@@ -36,7 +36,7 @@ struct AddToVisitedView: View {
                 Button(action: {
                     self.DeleteCountryFromVisited(country: country)
                 }) {
-                    Image(systemName: "mapping.circle.fill")
+                    Image(systemName: "mappin.circle.fill")
                         .foregroundColor(.red)
                         .font(.system(size: 24))
                 }

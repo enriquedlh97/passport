@@ -11,6 +11,7 @@ import Kingfisher
 struct CountryView: View {
     
     var country: Country
+    var region: String
     @StateObject var data: DataModel
     
     var body: some View {
@@ -27,6 +28,11 @@ struct CountryView: View {
                 DataView(title: "Capital:", text: country.capital, isValue: false)
                 DataView(title: "Subregion:", text: country.subregion, isValue: false)
                 DataView(title: "Population:", value: country.population, isValue: true)
+                VStack {
+                    // Right side
+                    AddToVisitedView(country: country, region: region)
+                        //.padding(.trailing, 20)
+                }
             }
             .padding(.horizontal, 80)
             Spacer()
@@ -41,6 +47,6 @@ struct CountryView: View {
 
 struct CountryView_Previews: PreviewProvider {
     static var previews: some View {
-        CountryView(country: Country.defaultCountry, data: DataModel())
+        CountryView(country: Country.defaultCountry, region: "africa", data: DataModel())
     }
 }

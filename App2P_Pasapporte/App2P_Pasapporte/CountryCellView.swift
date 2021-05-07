@@ -31,12 +31,15 @@ struct CountryCellView: View {
                 VStack {
                     // Middle side
                     Text(country.name)
-                        .font(.largeTitle)
+                        //.font(.largeTitle)
                 }
+                Spacer()
                 VStack {
                     // Right side
                     AddToVisitedView(country: country, region: region)
+                        //.padding(.trailing, 20)
                 }
+                .padding(.trailing, 20)
             }
         }
     }

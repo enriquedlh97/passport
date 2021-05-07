@@ -30,8 +30,8 @@ struct VisitedCellView: View {
                 VStack {
                     // Right side
                     Text(country.name_wrapped)
-                        .font(.largeTitle)
-                }
+                        //.font(.largeTitle)
+                }                
             }
         }
     }

@@ -26,26 +26,22 @@ struct VisitView: View {
         VStack {
             ZStack {
                 ScrollView(.vertical, showsIndicators: false) {
-                    VStack(spacing: 0) {
-                        ForEach(visited) { country in
-                            VStack {
-                                VisitedCellView(country: country)
-                            }
-                            // Adds functions to each row, allows to delete
-                            .contextMenu {
-                                Button {
-                                    DeleteFromVisited(country: country)
-                                } label: {
-                                    HStack {
-                                        Text("Delete")
-                                        Image(systemName: "xmark.circle.fill")
-                                    }
+                    ForEach(visited) { country in
+                        VStack {
+                            VisitedCellView(country: country)
+                        }
+                        // Adds functions to each row, allows to delete
+                        .contextMenu {
+                            Button {
+                                DeleteFromVisited(country: country)
+                            } label: {
+                                HStack {
+                                    Text("Delete")
+                                    Image(systemName: "xmark.circle.fill")
                                 }
                             }
                         }
                     }
-                    // Aqui podemos agregar un background color dependiendo d ela region a la que pertence el pais, como ustedes vean
-                    .background(Color(.white))
                 }
                 VStack {
                     Spacer()
