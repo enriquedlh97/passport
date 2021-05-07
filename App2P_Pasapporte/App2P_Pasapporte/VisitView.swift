@@ -28,7 +28,10 @@ struct VisitView: View {
                 ScrollView(.vertical, showsIndicators: false) {
                     ForEach(visited) { country in
                         VStack {
-                            VisitedCellView(country: country)
+                            NavigationLink(
+                                destination: ListView(),
+                                label: {VisitedCellView(country: country)}
+                            )
                         }
                         // Adds functions to each row, allows to delete
                         .contextMenu {
