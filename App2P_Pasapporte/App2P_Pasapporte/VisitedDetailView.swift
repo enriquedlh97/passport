@@ -9,7 +9,7 @@ import SwiftUI
 
 struct VisitedDetailView: View {
     
-    
+    var country: Country
     
     var body: some View {
         Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
@@ -18,6 +18,6 @@ struct VisitedDetailView: View {
 
 struct VisitedDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        VisitedDetailView()
+        VisitedDetailView(country: Country.defaultCountry)
     }
 }
