@@ -44,7 +44,8 @@ struct VisitView: View {
                             }
                         }
                     }
-                    .background(Color(.blue))
+                    // Aqui podemos agregar un background color dependiendo d ela region a la que pertence el pais, como ustedes vean
+                    .background(Color(.white))
                 }
                 VStack {
                     Spacer()
