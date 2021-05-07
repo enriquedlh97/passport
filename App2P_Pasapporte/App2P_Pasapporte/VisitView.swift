@@ -30,7 +30,7 @@ struct VisitView: View {
                         VStack {
                             VisitedCellView(country: country)
                         }
-                        // Adds functions to each row
+                        // Adds functions to each row, allows to delete
                         .contextMenu {
                             Button {
                                 DeleteFromVisited(country: country)
