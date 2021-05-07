@@ -20,9 +20,14 @@ import SwiftUI
 
 @main
 struct App2P_PasapporteApp: App {
+    
+    let persistanceController = PersistanceController.shared
+    
     var body: some Scene {
         WindowGroup {
             PlaceHolderHomeView()
+                .environment(\.managedObjectContext,
+                             persistanceController.container.viewContext)
         }
     }
 }
