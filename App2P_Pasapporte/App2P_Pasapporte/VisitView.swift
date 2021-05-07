@@ -27,14 +27,16 @@ struct VisitView: View {
             ZStack {
                 ScrollView(.vertical, showsIndicators: false) {
                     ForEach(visited) { country in
-                        Text(country.name_wrapped)
-                    }
-                    // Adds functions to each row
-                    .contextMenu {
-                        Button {
-                            DeleteFromVisited(country)
-                        } label: {
-                            Label("Delete", image: "xmark.circle.fill")
+                        VStack {
+                            Text(country.name_wrapped)
+                        }
+                        // Adds functions to each row
+                        .contextMenu {
+                            Button {
+                                DeleteFromVisited(country: country)
+                            } label: {
+                                Label("Delete", image: "xmark.circle.fill")
+                            }
                         }
                     }
                 }
