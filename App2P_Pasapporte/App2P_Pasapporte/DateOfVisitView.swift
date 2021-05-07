@@ -13,7 +13,7 @@ struct DateOfVisitView: View {
     @State private var visitDate = Date()
     
     var body: some View {
-        DatePicker("Date of visit to country", selection: $visitDate, in: ...Date(), displayedComponents: .date)
+        DatePicker("Visited on", selection: $visitDate, in: ...Date(), displayedComponents: .date)
     }
 }
 
