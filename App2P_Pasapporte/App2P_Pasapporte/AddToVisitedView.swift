@@ -47,7 +47,7 @@ struct AddToVisitedView: View {
         self.country = country
         self.region = region
         // Predicate checks that the id value is the same as the one indicated in NSNumber
-        fetchRequest = FetchRequest<Visited>(entity: Visited.entity(), sortDescriptors: [], predicate: NSPredicate(format: "id == %@", NSNumber(value: country.id)))
+        fetchRequest = FetchRequest<Visited>(entity: Visited.entity(), sortDescriptors: [], predicate: NSPredicate(format: "id == %@", country.id as CVarArg))
     }
     
     func SaveCountryToVisited(country: Country, region: String) {
