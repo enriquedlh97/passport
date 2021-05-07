@@ -13,31 +13,32 @@ import SwiftUI
 
 struct ListView: View {
     @StateObject var data = DataModel()
+    @State var text = ""
     @State var indexSelected: Int = 0
     
     var body: some View {
         
         NavigationView {
             VStack {
+                SearchBarView(text: $text)
                 List {
                     Section(
                         header: Text("Americas"),
                         content: {
-                            ForEach(data.americas?.countriesList ?? [Country.defaultCountry]) { item in
-                                
+                            ForEach(data.americas?.countriesList.filter {$0.name.contains(text) || text.isEmpty} ?? [Country.defaultCountry]) { item in
                                 NavigationLink(
                                     destination: CountryView(country: item, region: "americas", data: data),
                                     label: {CountryCellView(country: item, region: "americas")}
                                 )
-                                
+
                                 // .listRowBackground(Color(.blue))
-                                
+
                             }
                         })
                     Section(
                         header: Text("Europe"),
                         content: {
-                            ForEach(data.europe?.countriesList ?? [Country.defaultCountry]) { item in
+                            ForEach(data.europe?.countriesList.filter {$0.name.contains(text) || text.isEmpty} ?? [Country.defaultCountry]) { item in
                                 
                                 NavigationLink(
                                     destination: CountryView(country: item, region: "europe", data: data),
@@ -51,7 +52,7 @@ struct ListView: View {
                     Section(
                         header: Text("Africa"),
                         content: {
-                            ForEach(data.africa?.countriesList ?? [Country.defaultCountry]) { item in
+                            ForEach(data.africa?.countriesList.filter {$0.name.contains(text) || text.isEmpty} ?? [Country.defaultCountry]) { item in
                                 
                                 NavigationLink(
                                     destination: CountryView(country: item, region: "africa", data: data),
@@ -66,7 +67,7 @@ struct ListView: View {
                     Section(
                         header: Text("Asia"),
                         content: {
-                            ForEach(data.asia?.countriesList ?? [Country.defaultCountry]) { item in
+                            ForEach(data.asia?.countriesList.filter {$0.name.contains(text) || text.isEmpty} ?? [Country.defaultCountry]) { item in
                                 
                                 NavigationLink(
                                     destination: CountryView(country: item, region: "asia", data: data),
@@ -80,7 +81,7 @@ struct ListView: View {
                     Section(
                         header: Text("Oceania"),
                         content: {
-                            ForEach(data.oceania?.countriesList ?? [Country.defaultCountry]) { item in
+                            ForEach(data.oceania?.countriesList.filter {$0.name.contains(text) || text.isEmpty} ?? [Country.defaultCountry]) { item in
                                 
                                 NavigationLink(
                                     destination: CountryView(country: item, region: "oceania", data: data),
