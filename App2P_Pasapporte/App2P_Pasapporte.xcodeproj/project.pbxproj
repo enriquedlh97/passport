@@ -46,6 +46,7 @@
 		53C53702264490AE00A7D58A /* Visited+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C53700264490AE00A7D58A /* Visited+CoreDataProperties.swift */; };
 		53DCC0142641A0C800699C0B /* PlaceHolderHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DCC0132641A0C800699C0B /* PlaceHolderHomeView.swift */; };
 		53DE00E02645FB6E00A25227 /* VisitedDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DE00DF2645FB6E00A25227 /* VisitedDetailView.swift */; };
+		53DE00E32645FD0700A25227 /* DateOfVisitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DE00E22645FD0700A25227 /* DateOfVisitView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -87,6 +88,7 @@
 		53C53700264490AE00A7D58A /* Visited+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Visited+CoreDataProperties.swift"; path = "App2P_Pasapporte/CoreData/Visited+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		53DCC0132641A0C800699C0B /* PlaceHolderHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceHolderHomeView.swift; sourceTree = "<group>"; };
 		53DE00DF2645FB6E00A25227 /* VisitedDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitedDetailView.swift; sourceTree = "<group>"; };
+		53DE00E22645FD0700A25227 /* DateOfVisitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateOfVisitView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +146,7 @@
 				5312CD0E26442C6400706096 /* DataView.swift */,
 				24BC6057263F811B003D9CCF /* WeatherView.swift */,
 				24BC605A263F8136003D9CCF /* VisitView.swift */,
+				53DE00E22645FD0700A25227 /* DateOfVisitView.swift */,
 				53DE00DF2645FB6E00A25227 /* VisitedDetailView.swift */,
 				531B93EE2645901D00A5C4E6 /* AddToVisitedView.swift */,
 				531B93E826457EB500A5C4E6 /* Persistance.swift */,
@@ -278,6 +281,7 @@
 				24BC6058263F811B003D9CCF /* WeatherView.swift in Sources */,
 				5312CD052644221D00706096 /* CountryView.swift in Sources */,
 				24BC605E263F855F003D9CCF /* MediaModel.swift in Sources */,
+				53DE00E32645FD0700A25227 /* DateOfVisitView.swift in Sources */,
 				24BC6055263F80D9003D9CCF /* ListView.swift in Sources */,
 				5312CD12264431B100706096 /* MapView.swift in Sources */,
 				24BC6052263F7F4F003D9CCF /* HomeView.swift in Sources */,
