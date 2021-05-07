@@ -22,12 +22,20 @@ struct VisitView: View {
     var visited: FetchedResults<Visited>
     
     var body: some View {
-        
+        // ******** STARTS ORIGINAL *******
         VStack {
             ZStack {
                 ScrollView(.vertical, showsIndicators: false) {
                     ForEach(visited) { country in
                         Text(country.name_wrapped)
+                    }
+                    // Adds functions to each row
+                    .contextMenu {
+                        Button {
+                            DeleteFromVisited(country)
+                        } label: {
+                            Label("Delete", image: "xmark.circle.fill")
+                        }
                     }
                 }
                 VStack {
@@ -41,6 +49,7 @@ struct VisitView: View {
                 }
             }
         }
+        // ********* END ORIGINAL *********
     }
     func SaveToVisited() {
         // Object of the entity type to be able to save them
@@ -57,6 +66,11 @@ struct VisitView: View {
         visited.flag = Country.defaultCountry.flag
         visited.capital = Country.defaultCountry.capital
         visited.region = "africa"
+        try? viewContext.save()
+    }
+    
+    func DeleteFromVisited(country: Visited) {
+        viewContext.delete(country)
         try? viewContext.save()
     }
 }
