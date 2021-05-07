@@ -13,10 +13,21 @@ import SwiftUI
 struct VisitView: View {
     
     @StateObject var data: DataModel
+    @FetchRequest(
+        entity: Visited.entity(),
+        sortDescriptors: [NSSortDescriptor(key: "name", ascending: true)]
+    )
+    var visited: FetchedResults<Visited>
     
     var body: some View {
     
-        Text("Test")
+        VStack {
+            ScrollView(.vertical, showsIndicators: false) {
+                ForEach(visited) { country in
+                    Text(country.name_wrapped)
+                }
+            }
+        }
         
     }
     
