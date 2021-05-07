@@ -27,7 +27,34 @@ extension Visited {
     @NSManaged public var flag: String?
     @NSManaged public var capital: String?
     @NSManaged public var region: String?
-
+    
+    var name_wrapped: String {
+        name ?? " "
+    }
+    
+    var alpha2Code_wrapped: String {
+        alpha2Code ?? " "
+    }
+    
+    var alpha3Code_wrapped: String {
+        alpha3Code ?? " "
+    }
+    
+    var subregion_wrapped: String {
+        subregion ?? " "
+    }
+    
+    var flag_wrapped: String {
+        flag ?? " "
+    }
+    
+    var capital_wrapped: String {
+        capital ?? " "
+    }
+    
+    var region_wrapped: String {
+        region ?? " "
+    }
 }
 
 extension Visited : Identifiable {
