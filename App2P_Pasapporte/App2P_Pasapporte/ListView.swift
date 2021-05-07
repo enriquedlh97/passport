@@ -27,7 +27,7 @@ struct ListView: View {
                                 
                                 NavigationLink(
                                     destination: CountryView(country: item, data: data),
-                                    label: {CountryCellView(country: item)}
+                                    label: {CountryCellView(country: item, region: "americas")}
                                 )
                                 
                                 // .listRowBackground(Color(.blue))
@@ -41,7 +41,7 @@ struct ListView: View {
                                 
                                 NavigationLink(
                                     destination: CountryView(country: item, data: data),
-                                    label: {CountryCellView(country: item)}
+                                    label: {CountryCellView(country: item, region: "europe")}
                                 )
                                 
                                 //.listRowBackground(Color(.blue))
@@ -55,7 +55,7 @@ struct ListView: View {
                                 
                                 NavigationLink(
                                     destination: CountryView(country: item, data: data),
-                                    label: {CountryCellView(country: item)}
+                                    label: {CountryCellView(country: item, region: "africa")}
                                 )
                                 
                                 // .listRowBackground(Color(.blue))
@@ -70,7 +70,7 @@ struct ListView: View {
                                 
                                 NavigationLink(
                                     destination: CountryView(country: item, data: data),
-                                    label: {CountryCellView(country: item)}
+                                    label: {CountryCellView(country: item, region: "asia")}
                                 )
                                 
                                 //.listRowBackground(Color(.blue))
@@ -84,7 +84,7 @@ struct ListView: View {
                                 
                                 NavigationLink(
                                     destination: CountryView(country: item, data: data),
-                                    label: {CountryCellView(country: item)}
+                                    label: {CountryCellView(country: item, region: "oceania")}
                                 )
                                 
                                 //.listRowBackground(Color(.blue))

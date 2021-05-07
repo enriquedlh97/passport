@@ -11,6 +11,7 @@ import Kingfisher
 struct CountryCellView: View {
     
     var country: Country
+    var region: String
     
     var body: some View {
         VStack {
@@ -28,9 +29,13 @@ struct CountryCellView: View {
                         )
                 }
                 VStack {
-                    // Right side
+                    // Middle side
                     Text(country.name)
                         .font(.largeTitle)
+                }
+                VStack {
+                    // Right side
+                    AddToVisitedView(country: country, region: region)
                 }
             }
         }
@@ -39,6 +44,6 @@ struct CountryCellView: View {
 
 struct CountryCellView_Previews: PreviewProvider {
     static var previews: some View {
-        CountryCellView(country: Country.defaultCountry)
+        CountryCellView(country: Country.defaultCountry, region: "africa")
     }
 }
