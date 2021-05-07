@@ -17,7 +17,7 @@ struct VisitedCellView: View {
             HStack {
                 VStack {
                     // Left side
-                    KFImage(URL(string:  country.flag ?? Country.defaultCountry.flag)!)
+                    KFImage(URL(string:  country.flag_wrapped )!)
                         .resizable()
                         //.scaledToFit()
                         .frame(width: 120, height: 69)
@@ -29,7 +29,7 @@ struct VisitedCellView: View {
                 }
                 VStack {
                     // Right side
-                    Text(country.name ?? Country.defaultCountry.name)
+                    Text(country.name_wrapped)
                         .font(.largeTitle)
                 }
             }
