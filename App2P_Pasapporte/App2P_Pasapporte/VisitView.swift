@@ -28,14 +28,17 @@ struct VisitView: View {
                 ScrollView(.vertical, showsIndicators: false) {
                     ForEach(visited) { country in
                         VStack {
-                            Text(country.name_wrapped)
+                            CountryCellView(country: country)
                         }
                         // Adds functions to each row
                         .contextMenu {
                             Button {
                                 DeleteFromVisited(country: country)
                             } label: {
-                                Label("Delete", image: "xmark.circle.fill")
+                                HStack {
+                                    Text("Delete")
+                                    Image(systemName: "xmark.circle.fill")
+                                }
                             }
                         }
                     }
