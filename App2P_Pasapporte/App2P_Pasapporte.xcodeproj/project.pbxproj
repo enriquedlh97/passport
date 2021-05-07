@@ -34,6 +34,7 @@
 		531B93E926457EB500A5C4E6 /* Persistance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531B93E826457EB500A5C4E6 /* Persistance.swift */; };
 		531B93EC264589A400A5C4E6 /* VisitedCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531B93EB264589A400A5C4E6 /* VisitedCellView.swift */; };
 		531B93EF2645901D00A5C4E6 /* AddToVisitedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531B93EE2645901D00A5C4E6 /* AddToVisitedView.swift */; };
+		531B93F22645A9FD00A5C4E6 /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531B93F12645A9FD00A5C4E6 /* SearchBarView.swift */; };
 		53BED5D526434922007BA8A4 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BED5D426434922007BA8A4 /* Country.swift */; };
 		53BED5D826434CBE007BA8A4 /* Region.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BED5D726434CBE007BA8A4 /* Region.swift */; };
 		53BED5DF26435210007BA8A4 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BED5DE26435210007BA8A4 /* DataModel.swift */; };
@@ -76,6 +77,7 @@
 		531B93E826457EB500A5C4E6 /* Persistance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistance.swift; sourceTree = "<group>"; };
 		531B93EB264589A400A5C4E6 /* VisitedCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitedCellView.swift; sourceTree = "<group>"; };
 		531B93EE2645901D00A5C4E6 /* AddToVisitedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddToVisitedView.swift; sourceTree = "<group>"; };
+		531B93F12645A9FD00A5C4E6 /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
 		53BED5D426434922007BA8A4 /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
 		53BED5D726434CBE007BA8A4 /* Region.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Region.swift; sourceTree = "<group>"; };
 		53BED5DE26435210007BA8A4 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
@@ -133,6 +135,7 @@
 				24BC6080263F9068003D9CCF /* MediaCellView.swift */,
 				24BC6054263F80D9003D9CCF /* ListView.swift */,
 				5312CD0B2644283B00706096 /* CountryCellView.swift */,
+				531B93F12645A9FD00A5C4E6 /* SearchBarView.swift */,
 				531B93EB264589A400A5C4E6 /* VisitedCellView.swift */,
 				5312CD042644221D00706096 /* CountryView.swift */,
 				5312CD11264431B100706096 /* MapView.swift */,
@@ -289,6 +292,7 @@
 				53BED5DF26435210007BA8A4 /* DataModel.swift in Sources */,
 				5312CD0C2644283B00706096 /* CountryCellView.swift in Sources */,
 				53BED5D526434922007BA8A4 /* Country.swift in Sources */,
+				531B93F22645A9FD00A5C4E6 /* SearchBarView.swift in Sources */,
 				24BC6041263F793C003D9CCF /* App2P_PasapporteApp.swift in Sources */,
 				531B93EC264589A400A5C4E6 /* VisitedCellView.swift in Sources */,
 				531B93EF2645901D00A5C4E6 /* AddToVisitedView.swift in Sources */,
