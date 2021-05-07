@@ -12,6 +12,8 @@ import SwiftUI
 
 struct VisitView: View {
     
+    @Environment(\.managedObjectContext) var viewContext
+    
     @StateObject var data: DataModel
     @FetchRequest(
         entity: Visited.entity(),
@@ -20,17 +22,43 @@ struct VisitView: View {
     var visited: FetchedResults<Visited>
     
     var body: some View {
-    
+        
         VStack {
-            ScrollView(.vertical, showsIndicators: false) {
-                ForEach(visited) { country in
-                    Text(country.name_wrapped)
+            ZStack {
+                ScrollView(.vertical, showsIndicators: false) {
+                    ForEach(visited) { country in
+                        Text(country.name_wrapped)
+                    }
+                }
+                VStack {
+                    Spacer()
+                    Button {
+                        SaveToVisited()
+                    } label: {
+                        Image(systemName: "plus.circle.fill")
+                            .font(.largeTitle)
+                    }
                 }
             }
         }
-        
     }
-    
+    func SaveToVisited() {
+        // Object of the entity type to be able to save them
+        let visited = Visited(context: viewContext)
+        
+        visited.id = Country.defaultCountry.id
+        visited.name = Country.defaultCountry.name
+        visited.alpha2Code = Country.defaultCountry.alpha2Code
+        visited.alpha3Code = Country.defaultCountry.alpha3Code
+        visited.subregion = Country.defaultCountry.subregion
+        visited.population = Country.defaultCountry.population
+        visited.lat = Country.defaultCountry.lat
+        visited.long = Country.defaultCountry.long
+        visited.flag = Country.defaultCountry.flag
+        visited.capital = Country.defaultCountry.capital
+        visited.region = "africa"
+        try? viewContext.save()
+    }
 }
 
 struct VisitView_Previews: PreviewProvider {
