@@ -13,7 +13,9 @@ struct DateOfVisitView: View {
     @State private var visitDate = Date()
     
     var body: some View {
-        DatePicker("Visited on", selection: $visitDate, in: ...Date(), displayedComponents: .date)
+        Form {
+            DatePicker("Visited on", selection: $visitDate, in: ...Date(), displayedComponents: .date)
+        }
     }
 }
 
