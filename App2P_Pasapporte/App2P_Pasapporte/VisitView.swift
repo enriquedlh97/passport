@@ -26,22 +26,25 @@ struct VisitView: View {
         VStack {
             ZStack {
                 ScrollView(.vertical, showsIndicators: false) {
-                    ForEach(visited) { country in
-                        VStack {
-                            VisitedCellView(country: country)
-                        }
-                        // Adds functions to each row, allows to delete
-                        .contextMenu {
-                            Button {
-                                DeleteFromVisited(country: country)
-                            } label: {
-                                HStack {
-                                    Text("Delete")
-                                    Image(systemName: "xmark.circle.fill")
+                    VStack(spacing: 0) {
+                        ForEach(visited) { country in
+                            VStack {
+                                VisitedCellView(country: country)
+                            }
+                            // Adds functions to each row, allows to delete
+                            .contextMenu {
+                                Button {
+                                    DeleteFromVisited(country: country)
+                                } label: {
+                                    HStack {
+                                        Text("Delete")
+                                        Image(systemName: "xmark.circle.fill")
+                                    }
                                 }
                             }
                         }
                     }
+                    .background(Color(.blue))
                 }
                 VStack {
                     Spacer()
