@@ -19,7 +19,7 @@ struct DataView: View {
             Text(title)
             Spacer()
             if isValue {
-            //Text(String(format: "%0.0f", value))
+                //Text(String(format: "%0.0f", value))
                 Text(add_comma(value: value ?? 0))
             } else {
                 Text(text ?? "")

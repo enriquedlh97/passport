@@ -30,9 +30,9 @@ struct ListView: View {
                                     destination: CountryView(country: item, region: "americas", data: data),
                                     label: {CountryCellView(country: item, region: "americas")}
                                 )
-
+                                
                                 // .listRowBackground(Color(.blue))
-
+                                
                             }
                         })
                     Section(

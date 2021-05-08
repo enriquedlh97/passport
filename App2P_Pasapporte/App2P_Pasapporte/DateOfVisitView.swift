@@ -16,7 +16,7 @@ struct DateOfVisitView: View {
     
     var body: some View {
         
-            DatePicker("Visited on", selection: $visitDate, in: ...Date(), displayedComponents: .date)
+        DatePicker("Visited on", selection: $visitDate, in: ...Date(), displayedComponents: .date)
         
     }
 }

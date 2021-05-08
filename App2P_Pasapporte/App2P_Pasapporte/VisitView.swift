@@ -70,9 +70,9 @@ struct VisitView: View {
     }
     
     func DeleteFromVisited(country: Visited) {
-//        if let index = visited.firstIndex(where: {$0.name == country.name}) {
-//            viewContext.delete(visited[index])
-//        }
+        //        if let index = visited.firstIndex(where: {$0.name == country.name}) {
+        //            viewContext.delete(visited[index])
+        //        }
         viewContext.delete(country)
         try? viewContext.save()
     }

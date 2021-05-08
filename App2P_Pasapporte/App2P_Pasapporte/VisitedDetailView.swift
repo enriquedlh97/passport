@@ -21,7 +21,7 @@ struct VisitedDetailView: View {
                 List {
                     ForEach(country.visitDate, id: \.self) { visit in
                         VStack {
-                        DateOfVisitView(visitDate: visit)
+                            DateOfVisitView(visitDate: visit)
                         }
                         // Adds functions to each row, allows to delete
                         .contextMenu {
@@ -34,7 +34,7 @@ struct VisitedDetailView: View {
                                 }
                             }
                         }
-
+                        
                     }
                 }
                 VStack {
@@ -58,9 +58,9 @@ struct VisitedDetailView: View {
     }
     
     func DeleteVisit(country: Visited) {
-//        Should delete the date
-//        country.visitDate
-//        try? viewContext.save()
+        //        Should delete the date
+        //        country.visitDate
+        //        try? viewContext.save()
     }
 }
 
