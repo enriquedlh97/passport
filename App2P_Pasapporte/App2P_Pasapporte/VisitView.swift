@@ -65,12 +65,15 @@ struct VisitView: View {
         visited.flag = Country.defaultCountry.flag
         visited.capital = Country.defaultCountry.capital
         visited.region = "africa"
-        visited.visitDate = [Date()]
+        //visited.visitDate = [Date()]
         try? viewContext.save()
     }
     
     func DeleteFromVisited(country: Visited) {
-        country.visitDate.append(Date())
+//        if let index = visited.firstIndex(where: {$0.name == country.name}) {
+//            viewContext.delete(visited[index])
+//        }
+        viewContext.delete(country)
         try? viewContext.save()
     }
 }

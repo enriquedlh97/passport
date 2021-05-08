@@ -10,20 +10,20 @@ import SwiftUI
 struct DateOfVisitView: View {
     
     // Date initialized to current date
-    @State private var visitDate = Date()
-    //@State var visitDate: Date
+    //@State private var visitDate = Date()
+    @State public var visitDate: Date
     
     
     var body: some View {
-        Form {
+        
             DatePicker("Visited on", selection: $visitDate, in: ...Date(), displayedComponents: .date)
-        }
+        
     }
 }
 
 struct DateOfVisitView_Previews: PreviewProvider {
     static var previews: some View {
-        //DateOfVisitView(visitDate: Date())
-        DateOfVisitView()
+        DateOfVisitView(visitDate: Date())
+        //DateOfVisitView()
     }
 }
