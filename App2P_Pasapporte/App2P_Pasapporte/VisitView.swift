@@ -29,7 +29,7 @@ struct VisitView: View {
                     ForEach(visited) { country in
                         VStack {
                             NavigationLink(
-                                destination: VisitedDetailView(data: data, country: country),
+                                destination: VisitedDetailView(country: country),
                                 label: {VisitedCellView(country: country)}
                             )
                         }
@@ -65,6 +65,7 @@ struct VisitView: View {
         visited.flag = Country.defaultCountry.flag
         visited.capital = Country.defaultCountry.capital
         visited.region = "africa"
+        visited.visitDate = [Date()]
         try? viewContext.save()
     }
     
