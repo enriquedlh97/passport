@@ -10,10 +10,38 @@ import SwiftUI
 struct VisitedDetailView: View {
     
     @StateObject var data: DataModel
+    @FetchRequest(
+        entity: DateOfVisitInfo.entity(),
+        sortDescriptors: [NSSortDescriptor(key: "country_name", ascending: true)]
+    )
+    var date_of_visit: FetchedResults<DateOfVisitInfo>
+    
     var country: Visited
     
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            ZStack {
+                List {
+                    ForEach(date_of_visit) { visit in
+                        VStack {
+                            Text(visit.country_name_wrapped)
+                            //DateOfVisitView()
+                        }
+                        // Adds functions to each row, allows to delete
+                        .contextMenu {
+                            Button {
+                                DeleteFromVisited(country: country)
+                            } label: {
+                                HStack {
+                                    Text("Delete")
+                                    Image(systemName: "xmark.circle.fill")
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
