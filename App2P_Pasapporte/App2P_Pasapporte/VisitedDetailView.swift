@@ -15,10 +15,9 @@ struct VisitedDetailView: View {
         VStack {
             ZStack {
                 List {
-                    ForEach(date_of_visit) { visit in
+                    ForEach(country.visitDate, id: \.self) { visit in
                         VStack {
-                            Text(visit.country_name_wrapped)
-                            //DateOfVisitView()
+                            DateOfVisitView(visitDate: visit)
                         }
                         // Adds functions to each row, allows to delete
                         .contextMenu {
@@ -39,15 +38,12 @@ struct VisitedDetailView: View {
     }
     
     func AddDateOfVisit() {
-        let visit = Country(context: viewContext)
-        visit.country_name = Country.defaultCountry.name
-        visit.date_of_visit = Date()
-        try? viewContext.save()
+        
     }
 }
 
 struct VisitedDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        VisitedDetailView(data: DataModel(), country: Visited())
+        VisitedDetailView(country: Visited())
     }
 }
