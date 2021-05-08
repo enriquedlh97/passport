@@ -46,15 +46,6 @@ struct VisitView: View {
                         }
                     }
                 }
-                VStack {
-                    Spacer()
-                    Button {
-                        SaveToVisited()
-                    } label: {
-                        Image(systemName: "plus.circle.fill")
-                            .font(.largeTitle)
-                    }
-                }
             }
         }
         // ********* END ORIGINAL *********
