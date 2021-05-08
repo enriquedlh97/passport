@@ -9,15 +9,6 @@ import SwiftUI
 
 struct VisitedDetailView: View {
     
-    @Environment(\.managedObjectContext) var viewContext
-    
-    @StateObject var data: DataModel
-    @FetchRequest(
-        entity: DateOfVisitInfo.entity(),
-        sortDescriptors: [NSSortDescriptor(key: "country_name", ascending: true)]
-    )
-    var date_of_visit: FetchedResults<DateOfVisitInfo>
-    
     var country: Visited
     
     var body: some View {
@@ -48,7 +39,7 @@ struct VisitedDetailView: View {
     }
     
     func AddDateOfVisit() {
-        let visit = DateOfVisitInfo(context: viewContext)
+        let visit = Country(context: viewContext)
         visit.country_name = Country.defaultCountry.name
         visit.date_of_visit = Date()
         try? viewContext.save()

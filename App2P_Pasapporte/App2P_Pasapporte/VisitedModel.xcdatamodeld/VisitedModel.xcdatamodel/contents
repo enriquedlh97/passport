@@ -12,8 +12,9 @@
         <attribute name="population" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
         <attribute name="region" optional="YES" attributeType="String"/>
         <attribute name="subregion" optional="YES" attributeType="String"/>
+        <attribute name="visitDate" optional="YES" attributeType="Transformable"/>
     </entity>
     <elements>
-        <element name="Visited" positionX="-63" positionY="-18" width="128" height="28"/>
+        <element name="Visited" positionX="-63" positionY="-18" width="128" height="223"/>
     </elements>
 </model>

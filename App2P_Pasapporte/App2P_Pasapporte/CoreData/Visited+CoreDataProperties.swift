@@ -27,6 +27,7 @@ extension Visited {
     @NSManaged public var flag: String?
     @NSManaged public var capital: String?
     @NSManaged public var region: String?
+    @NSManaged public var visitDate: [Date]
     
     var name_wrapped: String {
         name ?? " "
