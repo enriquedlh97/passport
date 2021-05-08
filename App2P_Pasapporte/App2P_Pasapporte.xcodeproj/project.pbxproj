@@ -47,6 +47,8 @@
 		53DCC0142641A0C800699C0B /* PlaceHolderHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DCC0132641A0C800699C0B /* PlaceHolderHomeView.swift */; };
 		53DE00E02645FB6E00A25227 /* VisitedDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DE00DF2645FB6E00A25227 /* VisitedDetailView.swift */; };
 		53DE00E32645FD0700A25227 /* DateOfVisitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DE00E22645FD0700A25227 /* DateOfVisitView.swift */; };
+		53DE00E72646114600A25227 /* DateOfVisitModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 53DE00E52646114600A25227 /* DateOfVisitModel.xcdatamodeld */; };
+		53DE00EA2646117100A25227 /* DateOfVisit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DE00E92646117100A25227 /* DateOfVisit.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -89,6 +91,8 @@
 		53DCC0132641A0C800699C0B /* PlaceHolderHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceHolderHomeView.swift; sourceTree = "<group>"; };
 		53DE00DF2645FB6E00A25227 /* VisitedDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitedDetailView.swift; sourceTree = "<group>"; };
 		53DE00E22645FD0700A25227 /* DateOfVisitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateOfVisitView.swift; sourceTree = "<group>"; };
+		53DE00E62646114600A25227 /* DateOfVisitModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DateOfVisitModel.xcdatamodel; sourceTree = "<group>"; };
+		53DE00E92646117100A25227 /* DateOfVisit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DateOfVisit.swift; path = CoreData/DateOfVisit.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +130,7 @@
 		24BC603F263F793C003D9CCF /* App2P_Pasapporte */ = {
 			isa = PBXGroup;
 			children = (
+				53DE00E92646117100A25227 /* DateOfVisit.swift */,
 				53C536FA26448ED800A7D58A /* CoreData */,
 				24BC6071263F8B8B003D9CCF /* Fonts */,
 				24BC6040263F793C003D9CCF /* App2P_PasapporteApp.swift */,
@@ -185,6 +190,7 @@
 		53C536FA26448ED800A7D58A /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
+				53DE00E52646114600A25227 /* DateOfVisitModel.xcdatamodeld */,
 				53C536FB26448F1000A7D58A /* VisitedModel.xcdatamodeld */,
 			);
 			path = CoreData;
@@ -288,6 +294,7 @@
 				24BC606E263F8AFC003D9CCF /* WebView.swift in Sources */,
 				24BC606B263F8A3A003D9CCF /* MediaDetailView.swift in Sources */,
 				53C53702264490AE00A7D58A /* Visited+CoreDataProperties.swift in Sources */,
+				53DE00EA2646117100A25227 /* DateOfVisit.swift in Sources */,
 				531B93E926457EB500A5C4E6 /* Persistance.swift in Sources */,
 				24BC6084263F94C9003D9CCF /* Extensions.swift in Sources */,
 				24BC6087263F9668003D9CCF /* NavigationBarModifier.swift in Sources */,
@@ -295,6 +302,7 @@
 				53BED5D826434CBE007BA8A4 /* Region.swift in Sources */,
 				24BC6081263F9068003D9CCF /* MediaCellView.swift in Sources */,
 				24BC607E263F8C9C003D9CCF /* File.swift in Sources */,
+				53DE00E72646114600A25227 /* DateOfVisitModel.xcdatamodeld in Sources */,
 				53C53701264490AE00A7D58A /* Visited+CoreDataClass.swift in Sources */,
 				53BED5DF26435210007BA8A4 /* DataModel.swift in Sources */,
 				5312CD0C2644283B00706096 /* CountryCellView.swift in Sources */,
@@ -547,6 +555,16 @@
 			currentVersion = 53C536FC26448F1000A7D58A /* VisitedModel.xcdatamodel */;
 			name = VisitedModel.xcdatamodeld;
 			path = ../VisitedModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+		53DE00E52646114600A25227 /* DateOfVisitModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				53DE00E62646114600A25227 /* DateOfVisitModel.xcdatamodel */,
+			);
+			currentVersion = 53DE00E62646114600A25227 /* DateOfVisitModel.xcdatamodel */;
+			path = DateOfVisitModel.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
