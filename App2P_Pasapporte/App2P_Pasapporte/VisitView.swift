@@ -29,7 +29,7 @@ struct VisitView: View {
                     ForEach(visited) { country in
                         VStack {
                             NavigationLink(
-                                destination: ListView(),
+                                destination: VisitedDetailView(data: data, country: country),
                                 label: {VisitedCellView(country: country)}
                             )
                         }
