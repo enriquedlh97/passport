@@ -28,6 +28,8 @@ struct App2P_PasapporteApp: App {
             PlaceHolderHomeView()
                 .environment(\.managedObjectContext,
                              persistanceController.container.viewContext)
+                .environment(\.managedObjectContext,
+                             persistanceController.container2.viewContext)
         }
     }
 }

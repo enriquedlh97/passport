@@ -9,6 +9,8 @@ import SwiftUI
 
 struct VisitedDetailView: View {
     
+    @Environment(\.managedObjectContext) var viewContext
+    
     @StateObject var data: DataModel
     @FetchRequest(
         entity: DateOfVisitInfo.entity(),
@@ -30,7 +32,8 @@ struct VisitedDetailView: View {
                         // Adds functions to each row, allows to delete
                         .contextMenu {
                             Button {
-                                DeleteFromVisited(country: country)
+                                AddDateOfVisit()
+                                //DeleteFromVisited(country: country)
                             } label: {
                                 HStack {
                                     Text("Delete")
@@ -42,6 +45,13 @@ struct VisitedDetailView: View {
                 }
             }
         }
+    }
+    
+    func AddDateOfVisit() {
+        let visit = DateOfVisitInfo(context: viewContext)
+        visit.country_name = Country.defaultCountry.name
+        visit.date_of_visit = Date()
+        try? viewContext.save()
     }
 }
 
