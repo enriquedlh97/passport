@@ -10,8 +10,8 @@ import SwiftUI
 struct DateOfVisitView: View {
     
     // Date initialized to current date
-    //@State private var visitDate = Date()
-    @State var visitDate: Date
+    @State private var visitDate = Date()
+    //@State var visitDate: Date
     
     
     var body: some View {
@@ -23,6 +23,7 @@ struct DateOfVisitView: View {
 
 struct DateOfVisitView_Previews: PreviewProvider {
     static var previews: some View {
-        DateOfVisitView(visitDate: Date())
+        //DateOfVisitView(visitDate: Date())
+        DateOfVisitView()
     }
 }

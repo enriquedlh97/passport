@@ -70,7 +70,7 @@ struct VisitView: View {
     }
     
     func DeleteFromVisited(country: Visited) {
-        viewContext.delete(country)
+        country.visitDate.append(Date())
         try? viewContext.save()
     }
 }

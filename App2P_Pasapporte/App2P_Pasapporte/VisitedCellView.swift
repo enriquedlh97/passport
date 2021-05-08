@@ -10,7 +10,7 @@ import Kingfisher
 
 struct VisitedCellView: View {
     
-    var country: Visited
+    @State var country: Visited
     
     var body: some View {
         VStack {
