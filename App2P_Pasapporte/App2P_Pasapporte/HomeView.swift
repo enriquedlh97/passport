@@ -27,10 +27,6 @@ struct HomeView: View {
                         Label("Visited", systemImage: "checkmark.circle.fill")
                         
                     }
-//                WeatherView(media: data)
-//                    .tabItem {
-//                        Label("Weather", systemImage: "sun.max.fill")
-//                    }
                 
             }
             

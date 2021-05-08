@@ -12,18 +12,14 @@
 		24BC6048263F793D003D9CCF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24BC6047263F793D003D9CCF /* Preview Assets.xcassets */; };
 		24BC6052263F7F4F003D9CCF /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BC6051263F7F4F003D9CCF /* HomeView.swift */; };
 		24BC6055263F80D9003D9CCF /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BC6054263F80D9003D9CCF /* ListView.swift */; };
-		24BC6058263F811B003D9CCF /* WeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BC6057263F811B003D9CCF /* WeatherView.swift */; };
 		24BC605B263F8136003D9CCF /* VisitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BC605A263F8136003D9CCF /* VisitView.swift */; };
 		24BC605E263F855F003D9CCF /* MediaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BC605D263F855F003D9CCF /* MediaModel.swift */; };
 		24BC6061263F85CB003D9CCF /* Media.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BC6060263F85CB003D9CCF /* Media.swift */; };
-		24BC606B263F8A3A003D9CCF /* MediaDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BC606A263F8A3A003D9CCF /* MediaDetailView.swift */; };
-		24BC606E263F8AFC003D9CCF /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BC606D263F8AFC003D9CCF /* WebView.swift */; };
 		24BC6073263F8B9D003D9CCF /* LondonTube-MABx.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 24BC6072263F8B9D003D9CCF /* LondonTube-MABx.ttf */; };
 		24BC6076263F8BA8003D9CCF /* LemonMilk.otf in Resources */ = {isa = PBXBuildFile; fileRef = 24BC6075263F8BA8003D9CCF /* LemonMilk.otf */; };
 		24BC607A263F8BE0003D9CCF /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 24BC6078263F8BE0003D9CCF /* Montserrat-Regular.ttf */; };
 		24BC607B263F8BE0003D9CCF /* Montserrat-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 24BC6079263F8BE0003D9CCF /* Montserrat-SemiBold.ttf */; };
 		24BC607E263F8C9C003D9CCF /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BC607D263F8C9C003D9CCF /* File.swift */; };
-		24BC6081263F9068003D9CCF /* MediaCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BC6080263F9068003D9CCF /* MediaCellView.swift */; };
 		24BC6084263F94C9003D9CCF /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BC6083263F94C9003D9CCF /* Extensions.swift */; };
 		24BC6087263F9668003D9CCF /* NavigationBarModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BC6086263F9668003D9CCF /* NavigationBarModifier.swift */; };
 		24BC608B263F978B003D9CCF /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24BC608A263F978B003D9CCF /* Colors.xcassets */; };
@@ -57,18 +53,14 @@
 		24BC6049263F793D003D9CCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		24BC6051263F7F4F003D9CCF /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		24BC6054263F80D9003D9CCF /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
-		24BC6057263F811B003D9CCF /* WeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherView.swift; sourceTree = "<group>"; };
 		24BC605A263F8136003D9CCF /* VisitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitView.swift; sourceTree = "<group>"; };
 		24BC605D263F855F003D9CCF /* MediaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaModel.swift; sourceTree = "<group>"; };
 		24BC6060263F85CB003D9CCF /* Media.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Media.swift; sourceTree = "<group>"; };
-		24BC606A263F8A3A003D9CCF /* MediaDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaDetailView.swift; sourceTree = "<group>"; };
-		24BC606D263F8AFC003D9CCF /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 		24BC6072263F8B9D003D9CCF /* LondonTube-MABx.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LondonTube-MABx.ttf"; sourceTree = "<group>"; };
 		24BC6075263F8BA8003D9CCF /* LemonMilk.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = LemonMilk.otf; sourceTree = "<group>"; };
 		24BC6078263F8BE0003D9CCF /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
 		24BC6079263F8BE0003D9CCF /* Montserrat-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBold.ttf"; sourceTree = "<group>"; };
 		24BC607D263F8C9C003D9CCF /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
-		24BC6080263F9068003D9CCF /* MediaCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaCellView.swift; sourceTree = "<group>"; };
 		24BC6083263F94C9003D9CCF /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		24BC6086263F9668003D9CCF /* NavigationBarModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarModifier.swift; sourceTree = "<group>"; };
 		24BC608A263F978B003D9CCF /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
@@ -131,12 +123,9 @@
 				24BC6040263F793C003D9CCF /* App2P_PasapporteApp.swift */,
 				24BC6051263F7F4F003D9CCF /* HomeView.swift */,
 				53DCC0132641A0C800699C0B /* PlaceHolderHomeView.swift */,
-				24BC606A263F8A3A003D9CCF /* MediaDetailView.swift */,
 				24BC6086263F9668003D9CCF /* NavigationBarModifier.swift */,
 				24BC6083263F94C9003D9CCF /* Extensions.swift */,
 				53BED5D726434CBE007BA8A4 /* Region.swift */,
-				24BC606D263F8AFC003D9CCF /* WebView.swift */,
-				24BC6080263F9068003D9CCF /* MediaCellView.swift */,
 				24BC6054263F80D9003D9CCF /* ListView.swift */,
 				5312CD0B2644283B00706096 /* CountryCellView.swift */,
 				531B93F12645A9FD00A5C4E6 /* SearchBarView.swift */,
@@ -144,7 +133,6 @@
 				5312CD042644221D00706096 /* CountryView.swift */,
 				5312CD11264431B100706096 /* MapView.swift */,
 				5312CD0E26442C6400706096 /* DataView.swift */,
-				24BC6057263F811B003D9CCF /* WeatherView.swift */,
 				24BC605A263F8136003D9CCF /* VisitView.swift */,
 				53DE00E22645FD0700A25227 /* DateOfVisitView.swift */,
 				53DE00DF2645FB6E00A25227 /* VisitedDetailView.swift */,
@@ -278,22 +266,18 @@
 				24BC605B263F8136003D9CCF /* VisitView.swift in Sources */,
 				53DCC0142641A0C800699C0B /* PlaceHolderHomeView.swift in Sources */,
 				5312CD0F26442C6400706096 /* DataView.swift in Sources */,
-				24BC6058263F811B003D9CCF /* WeatherView.swift in Sources */,
 				5312CD052644221D00706096 /* CountryView.swift in Sources */,
 				24BC605E263F855F003D9CCF /* MediaModel.swift in Sources */,
 				53DE00E32645FD0700A25227 /* DateOfVisitView.swift in Sources */,
 				24BC6055263F80D9003D9CCF /* ListView.swift in Sources */,
 				5312CD12264431B100706096 /* MapView.swift in Sources */,
 				24BC6052263F7F4F003D9CCF /* HomeView.swift in Sources */,
-				24BC606E263F8AFC003D9CCF /* WebView.swift in Sources */,
-				24BC606B263F8A3A003D9CCF /* MediaDetailView.swift in Sources */,
 				53C53702264490AE00A7D58A /* Visited+CoreDataProperties.swift in Sources */,
 				531B93E926457EB500A5C4E6 /* Persistance.swift in Sources */,
 				24BC6084263F94C9003D9CCF /* Extensions.swift in Sources */,
 				24BC6087263F9668003D9CCF /* NavigationBarModifier.swift in Sources */,
 				24BC6061263F85CB003D9CCF /* Media.swift in Sources */,
 				53BED5D826434CBE007BA8A4 /* Region.swift in Sources */,
-				24BC6081263F9068003D9CCF /* MediaCellView.swift in Sources */,
 				24BC607E263F8C9C003D9CCF /* File.swift in Sources */,
 				53C53701264490AE00A7D58A /* Visited+CoreDataClass.swift in Sources */,
 				53BED5DF26435210007BA8A4 /* DataModel.swift in Sources */,
