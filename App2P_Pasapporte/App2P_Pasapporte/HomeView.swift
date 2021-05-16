@@ -16,28 +16,33 @@ struct HomeView: View {
     
     var body: some View {
         
-        NavigationView {
-            TabView {
-                ListView(data: data)
-                    .tabItem {
-                        Label("Countries", systemImage: "pin.circle.fill")
-                    }
-                VisitView(data: data)
-                    .tabItem {
-                        Label("Visited", systemImage: "checkmark.circle.fill")
-                        
-                    }
+        VStack{
+            NavigationView  {
+                TabView {
+                    
+                    ListView(data: data)
+                        .tabItem {
+                            Label("Countries", systemImage: "pin.circle.fill")
+                            
+                        }
+                    VisitView(data: data)
+                        .tabItem {
+                            Label("Visited", systemImage: "checkmark.circle.fill")
+                        }
+                }
+            }
+            .accentColor(Color(#colorLiteral(red: 0.9254902005, green: 0.2352941185, blue: 0.1019607857, alpha: 1)))
+            .onAppear {
+                UITabBar.appearance().barTintColor = UIColor(Color("NaplesYellow"))
                 
             }
             
         }
-        .accentColor(Color(#colorLiteral(red: 0.9254902005, green: 0.2352941185, blue: 0.1019607857, alpha: 1)))
-        .onAppear {
-            UITabBar.appearance().barTintColor = UIColor(Color(#colorLiteral(red: 0.9986861348, green: 0.8718172312, blue: 0.3506337404, alpha: 1)))
-            
-        }
+        .navigationBarTitle("Countries")
+        .navigationBarTitleDisplayMode(.inline)
         
     }
+    
 }
 
 struct HomeView_Previews: PreviewProvider {

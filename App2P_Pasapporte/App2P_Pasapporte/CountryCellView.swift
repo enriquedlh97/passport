@@ -21,7 +21,7 @@ struct CountryCellView: View {
                     KFImage(URL(string:  country.flag)!)
                         .resizable()
                         //.scaledToFit()
-                        .frame(width: 120, height: 69)
+                        .frame(width: 100, height: 60)
                         .padding(.top, -2)
                         .cornerRadius(6)
                         .overlay(RoundedRectangle(cornerRadius: 6)
@@ -38,8 +38,15 @@ struct CountryCellView: View {
                     // Right side
                     AddToVisitedView(country: country, region: region)
                 }
+                
                 .padding(.trailing, 20)
             }
+            .onTapGesture { //Para vibrar al momento de hacer tap
+                let generator = UINotificationFeedbackGenerator()
+                generator.notificationOccurred(.success)
+                //print("Si funciona")
+            }
+            
         }
     }
 }

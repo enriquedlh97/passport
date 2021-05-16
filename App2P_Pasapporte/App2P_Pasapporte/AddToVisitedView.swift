@@ -23,25 +23,33 @@ struct AddToVisitedView: View {
         VStack {
             // Checks if element is already in favorites
             if visited.count == 0 {
+                
                 // If not, then adds fucntionality to add it
                 Button(action: {
                     self.SaveCountryToVisited(country: country, region: region)
-                }) {
+                })
+                {
                     Image(systemName: "mappin.circle")
                         .foregroundColor(.gray)
-                        .font(.system(size: 24))
+                        .font(.system(size: 28))
                 }
+
             } else {
                 // if it is, then adds functionality to take the element off
                 Button(action: {
                     self.DeleteCountryFromVisited(country: country)
                 }) {
                     Image(systemName: "mappin.circle.fill")
-                        .foregroundColor(.red)
-                        .font(.system(size: 24))
+                        .foregroundColor(Color("BlueGreen"))
+                        .font(.system(size: 28))
                 }
+                
             }
-        }    }
+        }
+        
+        
+    }
+    
     
     init(country: Country, region: String) {
         self.country = country

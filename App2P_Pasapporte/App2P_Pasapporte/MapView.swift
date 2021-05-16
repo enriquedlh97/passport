@@ -17,7 +17,10 @@ struct MapView: View {
     var body: some View {
         VStack {
             Map(coordinateRegion: $region)
-                .frame(width: 400, height: 300) // Map size
+                .frame(width: 360, height: 300) // Map size
+                .cornerRadius(15)
+                .shadow(color: Color("RaisinBlack").opacity(0.5), radius: 5, x: 5, y: 5)
+                
         }
         // This makes sure that when this screen appears, the region variable is updated with the data
         // received from the country variable

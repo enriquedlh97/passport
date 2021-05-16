@@ -18,7 +18,7 @@ struct ListView: View {
     
     var body: some View {
         
-        NavigationView {
+        //NavigationView {
             VStack {
                 SearchBarView(text: $text)
                 List {
@@ -95,10 +95,13 @@ struct ListView: View {
                 }
                 
                 .listStyle(PlainListStyle())
+                
             }
-            .navigationBarTitle("Countries")
-            .navigationBarTitleDisplayMode(.inline)
-        }
+           
+            
+            
+        //}
+
     }
 }
 
