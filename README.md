@@ -1,7 +1,13 @@
 # <img src="https://github.com/enriquedlh97/passport/blob/main/Graphics/Pasapporte.png" width="80"> Passport
 Simple app to keep track of countries visited
 
-
+<p align="center">
+  <img src="https://github.com/enriquedlh97/passport/blob/main/ScreenShots/Simulator%20Screen%20Shot%20-%20iPhone%2012%20-%202021-05-16%20at%2014.57.58.png" width="160">
+  <img src="https://github.com/enriquedlh97/passport/blob/main/ScreenShots/Simulator%20Screen%20Shot%20-%20iPhone%2012%20-%202021-05-16%20at%2014.58.18.png" width="160">
+  <img src="https://github.com/enriquedlh97/passport/blob/main/ScreenShots/Simulator%20Screen%20Shot%20-%20iPhone%2012%20-%202021-05-16%20at%2014.58.42.png" width="160">
+  <img src="https://github.com/enriquedlh97/passport/blob/main/ScreenShots/Simulator%20Screen%20Shot%20-%20iPhone%2012%20-%202021-05-16%20at%2014.59.21.png" width="160">
+  <img src="https://github.com/enriquedlh97/passport/blob/main/ScreenShots/Simulator%20Screen%20Shot%20-%20iPhone%2012%20-%202021-05-16%20at%2015.00.36.png" width="160">
+  <img src="https://github.com/enriquedlh97/passport/blob/main/ScreenShots/Simulator%20Screen%20Shot%20-%20iPhone%2012%20-%202021-05-16%20at%2015.00.28.png" width="160">
 
 ## Dependencies
 
